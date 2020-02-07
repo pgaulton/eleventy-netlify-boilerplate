@@ -12,7 +12,6 @@ const Post = createClass({
       <main>
         <article>
           <h1>${entry.getIn(["data", "title"], null)}</h1>
-          <hr />
           <p>
             <small>
               <time
