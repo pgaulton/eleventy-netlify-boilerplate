@@ -3,20 +3,21 @@
 
 	{% include "components/head.njk" %}
 
-	<body>
+	<body class="d-flex flex-column">
 
-		<header>
-			<em>
-				<a href="{{ '/' | url }}">{{ metadata.title }}</a>
-			</em>
-			{% include "components/nav.njk" %}
+		<header class="navbar navbar-expand-lg navbar-dark bg-dark shadow-sm">
+      <a class="navbar-brand" href="{{ '/' | url }}">{{ metadata.title }}</a>
+      {% include "components/nav.njk" %}
 		</header>
 
-		<main>
+
+		<main class="container py-5">
 			{{ layoutContent | safe }}
 		</main>
 
-		{% include "components/footer.njk" %}
+    <footer class="mt-auto bg-light p-3 text-center shadow border-top">
+  		{% include "components/footer.njk" %}
+    </footer>
 
 	</body>
 
