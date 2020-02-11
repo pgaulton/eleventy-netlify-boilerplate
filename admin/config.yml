@@ -67,7 +67,7 @@ collections:
       - { label: "Product #3 Description", name: "product3Description", widget: "markdown", required: false }
       - { label: "Product #3 Link URL", name: "product3LinkUrl", widget: "string", required: false }
       - { label: "Companies Title", name: "companiesTitle", widget: "string", required: false }
-      - { label: "Product #2 Image", name: "companiesImages", widget: "image", allow_multiple: true, required: false }
+      - { label: "Companies Images", name: "companiesImages", widget: "image", allow_multiple: true, required: false }
       - { label: "Section 1 Title", name: "section1Title", widget: "string", required: false }
       - { label: "Section 1 Body", name: "section1Body", widget: "markdown", required: false }
       - { label: "Technologies Title", name: "technologiesTitle", widget: "string", required: false }
