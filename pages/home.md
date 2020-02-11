@@ -1,7 +1,7 @@
 ---
 title: Home
 date: 2016-01-01T00:00:00.000Z
-permalink: /old-home
+permalink: /home-old/index.html
 eleventyNavigation:
   key: Home
   order: 0
