@@ -5,19 +5,29 @@
 
 	<body class="d-flex flex-column">
 
-		<header class="navbar navbar-expand-lg navbar-dark bg-dark shadow-sm">
-      <a class="navbar-brand" href="{{ '/' | url }}">{{ metadata.title }}</a>
-      {% include "components/nav.njk" %}
-		</header>
+		<header>
+      <nav id="navbar-main" class="navbar navbar-expand-md navbar-main navbar-dark">
+        <div class="container">
+          <a class="navbar-brand" href="{{ '/' | url }}">
+            <img src="/_includes/assets/img/nvrk-logo-white.svg" alt="{{ metadata.title }}" class="main-logo" />
+            <img src="/_includes/assets/img/nvrk-logo-blue.svg" alt="{{ metadata.title }}" class="alt-logo" />
+          </a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+						{% include "components/nav.njk" %}
+            <a class="btn btn-rounded ml-4 btn-light shadow" href="/index.html">Dashboard</a>
+          </div>
+        </div>
+      </nav>
+    </header>
 
-
-		<main class="container py-5">
+		<main>
 			{{ layoutContent | safe }}
 		</main>
 
-    <footer class="mt-auto bg-light p-3 text-center shadow border-top">
-  		{% include "components/footer.njk" %}
-    </footer>
+		{% include "components/footer.njk" %}
 
 	</body>
 

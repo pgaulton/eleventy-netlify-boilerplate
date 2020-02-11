@@ -1,10 +1,8 @@
-<nav class="ml-auto">
-  {% set navPages = collections.all | eleventyNavigation %}
-  <ul class="navbar-nav mr-auto">
-  {%- for entry in navPages %}
-    <li class="nav-item">
-      <a class="nav-link{% if entry.url == page.url %} active{% endif %}" href="{{ entry.url | url }}">{{ entry.title }}</a>
-    </li>
-  {%- endfor %}
-  </ul>
-</nav>
+{% set navPages = collections.all | eleventyNavigation %}
+<ul class="navbar-nav ml-auto">
+{%- for entry in navPages %}
+  <li class="nav-item">
+    <a class="nav-link{% if entry.url == page.url %} active{% endif %}" href="{{ entry.url | url }}">{{ entry.title }}</a>
+  </li>
+{%- endfor %}
+</ul>

@@ -2,6 +2,269 @@
 layout: layouts/base.njk
 section: homepage
 ---
-<div>
-  <h1>{{ title }}</h1>
-</div>
+<section class="banner section-blue">
+  <div class="container text-center">
+
+    <div class="banner-one">        
+      <h2 class="banner-title">
+        {{ bannerTitle }}
+      </h2>
+
+      <p>{{ bannerBody }}</p>
+
+      <div>
+        <a class="btn btn-rounded btn-outline-light" href="{{ bannerLinkUrl }}">
+          {{ bannerLinkTitle }}
+        </a>
+      </div>
+    </div>
+
+    <div>
+      <img src="{{ bannerImage }}" alt="mockup" class="shadow-lg rounded" />
+    </div>
+
+  </div>
+</section>
+
+<section class="section-one">
+  <div class="container pb-5">
+    <div class="text-center">
+      <h3 class="subtitle">
+        {{ productsSubtitle }}
+      </h3>
+
+      <h2 class="mb-5">
+        {{ productsTitle }}
+      </h2>
+    </div>
+
+    <div class="row">
+      <div class="col-lg-4">
+        <div class="card py-2">
+          <div class="card-body">
+            <img src="{{ product1Image }}" class="pb-5 w-75" alt="{{ product1Title }}" />
+            <h4 class="card-title">{{ product1Title }}</h4>
+            <div class="card-text">
+              <p>{{ product1Description }}</p>
+            </div>
+            <a href="{{ product1LinkUrl }}" class="btn btn-link text-muted">
+              <i class="fas fa-arrow-right fa-2x"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4">
+        <div class="card py-2">
+          <div class="card-body">
+            <img src="{{ product2Image }}" class="pb-5 w-75" alt="{{ product2Title }}" />
+            <h4 class="card-title">{{ product2Title }}</h4>
+            <div class="card-text">
+              <p>{{ product2Description }}</p>
+            </div>
+            <a href="{{ product2LinkUrl }}" class="btn btn-link text-muted">
+              <i class="fas fa-arrow-right fa-2x"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4">
+        <div class="card py-2">
+          <div class="card-body">
+            <img src="{{ product3Image }}" class="pb-5 w-75" alt="{{ product3Title }}" />
+            <h4 class="card-title">{{ product3Title }}</h4>
+            <div class="card-text">
+              <p>{{ product3Description }}</p>
+            </div>
+            <a href="{{ product3LinkUrl }}" class="btn btn-link text-muted">
+              <i class="fas fa-arrow-right fa-2x"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<section>
+  <div class="container pb-5">
+    <h5 class="my-5 text-center">
+      Trusted by industry leading companies
+    </h5>
+
+    <div class="row">
+      <div class="col-1">
+        <img src="media/brand/1.png" alt="Chevron" />
+      </div>
+      <div class="col-1">
+        <img src="media/brand/2.png" alt="ExxonMobil" />
+      </div>
+      <div class="col-1">
+        <img src="media/brand/3.png" alt="BP" />
+      </div>
+      <div class="col-1">
+        <img src="media/brand/4.png" alt="andeavor" />
+      </div>
+      <div class="col-1">
+        <img src="media/brand/5.png" alt="Marathon" />
+      </div>
+      <div class="col-1">
+        <img src="media/brand/6.png" alt="Amspec" />
+      </div>
+      <div class="col-1">
+        <img src="media/brand/7.png" alt="Inspectorate" />
+      </div>
+      <div class="col-1">
+        <img src="media/brand/8.png" alt="intertek" />
+      </div>
+      <div class="col-1">
+        <img src="media/brand/9.png" alt="SGS" />
+      </div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-6">
+        <h3 class="section-title mb-4">{{ section1Title }}</h3>
+        {{ section1Body }}
+      </div>
+      <div class="col-lg-6"></div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="container">
+    <div class="text-center my-5">
+      <h2>{{ technologiesTitle }}</h2>
+    </div>
+    <div class="row mb-5">
+      <div class="col-lg-4 col-md-6 mb-5">
+        <img src="{{ technology1Image }}" class="pb-4" alt="{{ technology1Title }}" />
+        <h5 class="card-title mb-3">{{ technology1Title }}</h5>
+        <div class="card-text">
+          <p>{{ technology1Description }}</p>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-6 mb-5">
+        <img src="{{ technology2Image }}" class="pb-4" alt="{{ technology2Title }}" />
+        <h5 class="card-title mb-3">{{ technology2Title }}</h5>
+        <div class="card-text">
+          <p>{{ technology2Description }}</p>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-6 mb-5">
+        <img src="{{ technology3Image }}" class="pb-4" alt="{{ technology3Title }}" />
+        <h5 class="card-title mb-3">{{ technology3Title }}</h5>
+        <div class="card-text">
+          <p>{{ technology3Description }}</p>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-6 mb-5">
+        <img src="{{ technology4Image }}" class="pb-4" alt="{{ technology4Title }}" />
+        <h5 class="card-title mb-3">{{ technology4Title }}</h5>
+        <div class="card-text">
+          <p>{{ technology4Description }}</p>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-6 mb-5">
+        <img src="{{ technology5Image }}" class="pb-4" alt="{{ technology5Title }}" />
+        <h5 class="card-title mb-3">{{ technology5Title }}</h5>
+        <div class="card-text">
+          <p>{{ technology5Description }}</p>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-6 mb-5">
+        <img src="{{ technology6Image }}" class="pb-4" alt="{{ technology6Title }}" />
+        <h5 class="card-title mb-3">{{ technology6Title }}</h5>
+        <div class="card-text">
+          <p>{{ technology6Description }}</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<section class="section-blue call-to-action">
+  <div class="container">
+    <div class="row align-items-center justify-content-between text-white">
+      <div class="col-lg-7">
+        <h2 class="mb-3">{{ section2Title }}</h2>
+        <h4>{{ section2Body }}</h4>
+      </div>
+      <div class="col-lg-5 text-right">
+        <a href="{{ section2LinkUrl }}" class="btn btn-rounded btn-lg btn-light shadow">
+          {{ section2LinkTitle }}
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="container py-5">
+    <div class="text-center my-5">
+      <h3 class="subtitle">{{ resourcesSubtitle }}</h3>
+      <h2>{{ resourcesTitle }}</h2>
+    </div>
+
+    <div class="row">
+      <div class="col-6">
+        <a href="{{ resource1Link }}">
+          <div class="media p-5 mb-4 rounded shadow">
+            <img src="{{ resource1Image }}" class="mr-3" alt="{{ resource1Title }}">
+            <div class="media-body align-self-center">
+              {{ resource1Title }}
+            </div>
+          </div>
+        </a>
+      </div>
+      <div class="col-6">
+        <a href="{{ resource2Link }}">
+          <div class="media p-5 mb-4 rounded shadow">
+            <img src="{{ resource2Image }}" class="mr-3" alt="{{ resource2Title }}">
+            <div class="media-body align-self-center">
+              {{ resource2Title }}
+            </div>
+          </div>
+        </a>
+      </div>
+      <div class="col-6">
+        <a href="{{ resource3Link }}">
+          <div class="media p-5 mb-4 rounded shadow">
+            <img src="{{ resource3Image }}" class="mr-3" alt="{{ resource3Title }}">
+            <div class="media-body align-self-center">
+              {{ resource3Title }}
+            </div>
+          </div>
+        </a>
+      </div>
+      <div class="col-6">
+        <a href="{{ resource4Link }}">
+          <div class="media p-5 mb-4 rounded shadow">
+            <img src="{{ resource4Image }}" class="mr-3" alt="{{ resource4Title }}">
+            <div class="media-body align-self-center">
+              {{ resource4Title }}
+            </div>
+          </div>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section-blue call-to-action">
+  <div class="container text-center">
+    <h2>{{ section3Title }}</h2>
+
+    <div class="row">
+      <div class="col-8 offset-2">
+        <p>{{ section3Body }}</p>    
+      </div>
+    </div>
+  </div>
+</section>

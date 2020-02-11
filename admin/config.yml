@@ -46,65 +46,66 @@ collections:
       - { label: "Title", name: "title", widget: "string" }
       - { label: "Publish Date", name: "date", widget: "datetime" }
       - { label: "Permalink", name: "permalink", widget: "string" }
-      - { label: "Banner Title", name: "banner-title", widget: "string", required: false }
-      - { label: "Banner Body", name: "banner-body", widget: "markdown", required: false }
+      - { label: "Banner Title", name: "bannerTitle", widget: "string", required: false }
+      - { label: "Banner Body", name: "bannerBody", widget: "markdown", required: false }
       # @todo: create link widget - https://www.netlifycms.org/docs/custom-widgets
-      - { label: "Banner Link Title", name: "banner-link-title", widget: "string", required: false }
-      - { label: "Banner Link URL", name: "banner-link-url", widget: "string", required: false }
-      - { label: "Banner Image", name: "banner-image", widget: "image", required: false }
-      - { label: "Products Subtitle", name: "products-subtitle", widget: "string", required: false }
-      - { label: "Products Title", name: "products-title", widget: "string", required: false }
-      - { label: "Product #1 Image", name: "product-1-image", widget: "image", required: false }
-      - { label: "Product #1 Title", name: "product-1-title", widget: "string", required: false }
-      - { label: "Product #1 Description", name: "product-1-description", widget: "markdown", required: false }
-      - { label: "Product #1 Link URL", name: "product-1-link-url", widget: "string", required: false }
-      - { label: "Product #2 Image", name: "product-2-image", widget: "image", required: false }
-      - { label: "Product #2 Title", name: "product-2-title", widget: "string", required: false }
-      - { label: "Product #2 Description", name: "product-2-description", widget: "markdown", required: false }
-      - { label: "Product #2 Link URL", name: "product-2-link-url", widget: "string", required: false }
-      - { label: "Product #3 Image", name: "product-3-image", widget: "image", required: false }
-      - { label: "Product #3 Title", name: "product-3-title", widget: "string", required: false }
-      - { label: "Product #3 Description", name: "product-3-description", widget: "markdown", required: false }
-      - { label: "Product #3 Link URL", name: "product-3-link-url", widget: "string", required: false }
-      - { label: "Section 1 Title", name: "section-1-title", widget: "string", required: false }
-      - { label: "Section 1 Body", name: "section-1-body", widget: "markdown", required: false }
-      - { label: "Technologies Title", name: "technologies-title", widget: "string", required: false }
-      - { label: "Technology #1 Image", name: "technology-1-image", widget: "image", required: false }
-      - { label: "Technology #1 Title", name: "technology-1-title", widget: "string", required: false }
-      - { label: "Technology #1 Description", name: "technology-1-description", widget: "markdown", required: false }
-      - { label: "Technology #2 Image", name: "technology-2-image", widget: "image", required: false }
-      - { label: "Technology #2 Title", name: "technology-2-title", widget: "string", required: false }
-      - { label: "Technology #2 Description", name: "technology-2-description", widget: "markdown", required: false }
-      - { label: "Technology #3 Image", name: "technology-3-image", widget: "image", required: false }
-      - { label: "Technology #3 Title", name: "technology-3-title", widget: "string", required: false }
-      - { label: "Technology #3 Description", name: "technology-3-description", widget: "markdown", required: false }
-      - { label: "Technology #4 Image", name: "technology-4-image", widget: "image", required: false }
-      - { label: "Technology #4 Title", name: "technology-4-title", widget: "string", required: false }
-      - { label: "Technology #4 Description", name: "technology-4-description", widget: "markdown", required: false }
-      - { label: "Technology #5 Image", name: "technology-5-image", widget: "image", required: false }
-      - { label: "Technology #5 Title", name: "technology-5-title", widget: "string", required: false }
-      - { label: "Technology #5 Description", name: "technology-5-description", widget: "markdown", required: false }
-      - { label: "Technology #6 Image", name: "technology-6-image", widget: "image", required: false }
-      - { label: "Technology #6 Title", name: "technology-6-title", widget: "string", required: false }
-      - { label: "Technology #6 Description", name: "technology-6-description", widget: "markdown", required: false }
-      - { label: "Section 2 Title", name: "section-2-title", widget: "string", required: false }
-      - { label: "Section 2 Body", name: "section-2-body", widget: "markdown", required: false }
+      - { label: "Banner Link Title", name: "bannerLinkTitle", widget: "string", required: false }
+      - { label: "Banner Link URL", name: "bannerLinkUrl", widget: "string", required: false }
+      - { label: "Banner Image", name: "bannerImage", widget: "image", required: false }
+      - { label: "Products Subtitle", name: "productsSubtitle", widget: "string", required: false }
+      - { label: "Products Title", name: "productsTitle", widget: "string", required: false }
+      - { label: "Product #1 Image", name: "product1Image", widget: "image", required: false }
+      - { label: "Product #1 Title", name: "product1Title", widget: "string", required: false }
+      - { label: "Product #1 Description", name: "product1Description", widget: "markdown", required: false }
+      - { label: "Product #1 Link URL", name: "product1LinkUrl", widget: "string", required: false }
+      - { label: "Product #2 Image", name: "product2Image", widget: "image", required: false }
+      - { label: "Product #2 Title", name: "product2Title", widget: "string", required: false }
+      - { label: "Product #2 Description", name: "product2Description", widget: "markdown", required: false }
+      - { label: "Product #2 Link URL", name: "product2LinkUrl", widget: "string", required: false }
+      - { label: "Product #3 Image", name: "product3Image", widget: "image", required: false }
+      - { label: "Product #3 Title", name: "product3Title", widget: "string", required: false }
+      - { label: "Product #3 Description", name: "product3Description", widget: "markdown", required: false }
+      - { label: "Product #3 Link URL", name: "product3LinkUrl", widget: "string", required: false }
+      - { label: "Section 1 Title", name: "section1Title", widget: "string", required: false }
+      - { label: "Section 1 Body", name: "section1Body", widget: "markdown", required: false }
+      
+      - { label: "Technologies Title", name: "technologiesTitle", widget: "string", required: false }
+      - { label: "Technology #1 Image", name: "technology1Image", widget: "image", required: false }
+      - { label: "Technology #1 Title", name: "technology1Title", widget: "string", required: false }
+      - { label: "Technology #1 Description", name: "technology1Description", widget: "markdown", required: false }
+      - { label: "Technology #2 Image", name: "technology2Image", widget: "image", required: false }
+      - { label: "Technology #2 Title", name: "technology2Title", widget: "string", required: false }
+      - { label: "Technology #2 Description", name: "technology2Description", widget: "markdown", required: false }
+      - { label: "Technology #3 Image", name: "technology3Image", widget: "image", required: false }
+      - { label: "Technology #3 Title", name: "technology3Title", widget: "string", required: false }
+      - { label: "Technology #3 Description", name: "technology3Description", widget: "markdown", required: false }
+      - { label: "Technology #4 Image", name: "technology4Image", widget: "image", required: false }
+      - { label: "Technology #4 Title", name: "technology4Title", widget: "string", required: false }
+      - { label: "Technology #4 Description", name: "technology4Description", widget: "markdown", required: false }
+      - { label: "Technology #5 Image", name: "technology5Image", widget: "image", required: false }
+      - { label: "Technology #5 Title", name: "technology5Title", widget: "string", required: false }
+      - { label: "Technology #5 Description", name: "technology5Description", widget: "markdown", required: false }
+      - { label: "Technology #6 Image", name: "technology6Image", widget: "image", required: false }
+      - { label: "Technology #6 Title", name: "technology6Title", widget: "string", required: false }
+      - { label: "Technology #6 Description", name: "technology6Description", widget: "markdown", required: false }
+      - { label: "Section 2 Title", name: "section2Title", widget: "string", required: false }
+      - { label: "Section 2 Body", name: "section2Body", widget: "markdown", required: false }
       # @todo: create link widget - https://www.netlifycms.org/docs/custom-widgets
-      - { label: "Section 2 Link Title", name: "section-2-link-title", widget: "string", required: false }
-      - { label: "Section 2 Link URL", name: "section-2-link-url", widget: "string", required: false }
-      - { label: "Resources Subtitle", name: "resources-subtitle", widget: "string", required: false }
-      - { label: "Resources Title", name: "resources-title", widget: "string", required: false }
-      - { label: "Resource #1 Image", name: "resource-1-image", widget: "image", required: false }
-      - { label: "Resource #1 Link", name: "resource-1-link", widget: "string", required: false }
-      - { label: "Resource #1 Description", name: "resource-1-description", widget: "string", required: false }
-      - { label: "Resource #2 Image", name: "resource-2-image", widget: "image", required: false }
-      - { label: "Resource #2 Link", name: "resource-2-link", widget: "string", required: false }
-      - { label: "Resource #2 Description", name: "resource-2-description", widget: "string", required: false }
-      - { label: "Resource #3 Image", name: "resource-3-image", widget: "image", required: false }
-      - { label: "Resource #3 Link", name: "resource-3-link", widget: "string", required: false }
-      - { label: "Resource #3 Description", name: "resource-3-description", widget: "string", required: false }
-      - { label: "Resource #4 Image", name: "resource-4-image", widget: "image", required: false }
-      - { label: "Resource #4 Link", name: "resource-4-link", widget: "string", required: false }
-      - { label: "Resource #4 Description", name: "resource-4-description", widget: "string", required: false }
-      - { label: "Section 3 Title", name: "section-3-title", widget: "string", required: false }
-      - { label: "Section 3 Body", name: "section-3-body", widget: "markdown", required: false }
+      - { label: "Section 2 Link Title", name: "section2LinkTitle", widget: "string", required: false }
+      - { label: "Section 2 Link URL", name: "section2LinkUrl", widget: "string", required: false }
+      - { label: "Resources Subtitle", name: "resourcesSubtitle", widget: "string", required: false }
+      - { label: "Resources Title", name: "resourcesTitle", widget: "string", required: false }
+      - { label: "Resource #1 Image", name: "resource1Image", widget: "image", required: false }
+      - { label: "Resource #1 Link", name: "resource1Link", widget: "string", required: false }
+      - { label: "Resource #1 Title", name: "resource1Title", widget: "string", required: false }
+      - { label: "Resource #2 Image", name: "resource2Image", widget: "image", required: false }
+      - { label: "Resource #2 Link", name: "resource2Link", widget: "string", required: false }
+      - { label: "Resource #2 Title", name: "resource2Title", widget: "string", required: false }
+      - { label: "Resource #3 Image", name: "resource3Image", widget: "image", required: false }
+      - { label: "Resource #3 Link", name: "resource3Link", widget: "string", required: false }
+      - { label: "Resource #3 Title", name: "resource3Title", widget: "string", required: false }
+      - { label: "Resource #4 Image", name: "resource4Image", widget: "image", required: false }
+      - { label: "Resource #4 Link", name: "resource4Link", widget: "string", required: false }
+      - { label: "Resource #4 Title", name: "resource4Title", widget: "string", required: false }
+      - { label: "Section 3 Title", name: "section3Title", widget: "string", required: false }
+      - { label: "Section 3 Body", name: "section3Body", widget: "markdown", required: false }

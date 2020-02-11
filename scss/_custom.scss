@@ -1,0 +1,247 @@
+.navbar-main {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  -webkit-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+  padding: 0;
+
+  .nav-item {
+    margin: 0 23px;
+    padding: 36px 0px;
+    position: relative;
+
+    .nav-link {
+      position: relative;
+      font-size: 15px;
+      font-weight: 500;
+
+      &:after {
+        content: "";
+        position: absolute;
+        bottom: -2px;
+        width: 0;
+        height: 1px;
+        background: $navbar-dark-hover-color;
+        // @todo: use bs transition?
+        -webkit-transition: all .3s ease-in-out;
+        transition: all .3s ease-in-out;
+        left: 0;
+      }
+
+      &:hover:after {
+        width: 100%;
+      }
+    }
+  }
+
+  &.navbar-light {
+    .nav-link {
+      color: $colorDark1;
+
+      &:hover {
+        color: $colorBlue1;
+      }
+    }
+
+    // @todo: make primary colours?
+    .btn-outline-primary {
+      color: $colorBlue1;
+      border-color: $colorBlue1;
+      // border-width: 2px;
+
+      &:hover {
+        color: white;
+        background: $colorBlue1;
+      }
+    }
+
+  }
+
+  &.navbar-fixed {
+    position: fixed;
+    -webkit-animation: slideY .65s cubic-bezier(.23,1,.32,1) both;
+    animation: slideY .65s cubic-bezier(.23,1,.32,1) both;
+
+    .nav-item {
+      padding: 28px 0;
+    }
+
+    .navbar-brand img {
+      &.main-logo {
+        display: none;
+      }
+      &.alt-logo {
+        display: inline;
+      }
+    }
+  }
+
+  .navbar-brand {
+    display: block;
+    width: 160px;
+
+    img {
+      width: 100%;
+
+      &.alt-logo {
+        display: none;
+      }
+    }
+  }
+
+  .btn {    
+    border-color: transparent;
+
+    &.btn-light {
+      color: $colorBlue1;
+
+      &:hover {
+        color: white;
+        background: $colorBlue1;
+      }
+    }
+  }
+}
+
+.banner {
+  height: 935px;
+
+  p {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 30px;
+    margin-bottom: 47px;
+  }
+
+  .banner-one {
+    padding-top: 185px;
+    margin-bottom: 100px;
+  }
+}
+
+.section-blue {
+  background-image: -webkit-linear-gradient(350deg, $bgBlue1, $bgBlue2);
+  background-image: linear-gradient(100deg, $bgBlue1, $bgBlue2);
+  color: $white;
+
+  h1, h2, h3, h4, h5, h6 {
+    color: $white;
+  }
+
+  .btn-light:hover {
+    background: transparent;
+    color: $white;
+  }
+}
+
+// TODO: all buttons rounded?
+.btn.btn-rounded {
+  border-radius: 30px;
+  padding: 9px 37px;
+  font-size: 14px;
+  font-weight: 600;
+  border-width: 2px;
+
+  &.btn-lg {
+    font-size: 16px;
+    line-height: $line-height-base;
+    padding: 14px 40px;
+  }
+}
+
+
+// TODO: variables?
+body {
+  font-family: Poppins, sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: $colorGrey3;
+}
+
+h2 {
+  font-size: 36px;
+  font-weight: 600;
+  line-height: 1.4;
+
+  &.banner-title {
+    font-size: 40px;
+    line-height: 60px;
+    font-weight: 800;
+    margin-bottom: 20px;
+  }
+}
+
+h3.subtitle {
+  font-size: 16px;
+  font-weight: 500;
+  letter-spacing: 3px;
+  color: $primary;
+  text-transform: uppercase;
+}
+
+.section-title {
+  font-size: 1.75em;
+  line-height: 1.4;
+}
+
+.section-one {
+  padding-top: 400px;
+}
+
+img {
+  max-width: 100%;
+}
+
+.section-grey {
+  background: $bgGrey;
+}
+
+.call-to-action {
+  padding: 10em 0;
+}
+
+.list-social li > a {
+  height: 45px;
+  width: 45px;
+  line-height: 45px;
+  border: 1px solid $borderGrey;
+  display: block;
+  border-radius: 50%;
+  color: $colorGrey2;
+  text-align: center;
+
+  &:hover {
+    background: $bgBlue1;
+    border-color: $bgBlue1;
+    color: $white;
+    box-shadow: $box-shadow;
+  }
+}
+
+.card-body {
+  padding: $card-spacer-x 2.5rem;
+}
+
+.footer-menu {
+  
+  &.list-unstyled {
+    margin-bottom: 3rem;
+    
+    li:not(:last-child) {
+      margin-bottom: 10px;
+    }      
+  }
+
+  a {
+    color: $colorGrey1;
+    font-weight: 400;
+    line-height: 30px;
+  
+    &:hover {
+      color: $colorBlue1;
+    }
+  }
+}

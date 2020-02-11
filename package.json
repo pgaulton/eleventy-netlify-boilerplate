@@ -5,7 +5,9 @@
   "scripts": {
     "build": "npx eleventy",
     "watch": "npx eleventy --watch",
-    "debug": "DEBUG=* npx eleventy"
+    "serve": "npx eleventy --serve",
+    "debug": "DEBUG=* npx eleventy",
+    "build:css": "node-sass --output-style expanded --source-map true --source-map-contents true --precision 6 scss/main.scss _includes/assets/css/main.css"
   },
   "repository": {
     "type": "git",
@@ -23,9 +25,11 @@
   "homepage": "https://github.com/danurbanowicz/eleventy-netlify-boilerplate",
   "devDependencies": {
     "@11ty/eleventy": "^0.10.0",
+    "bootstrap": "^4.4.1",
     "luxon": "^1.21.3",
     "markdown-it": "^10.0.0",
-    "markdown-it-anchor": "^5.2.5"
+    "markdown-it-anchor": "^5.2.5",
+    "node-sass": "^4.13.1"
   },
   "dependencies": {
     "@11ty/eleventy-navigation": "^0.1.4",

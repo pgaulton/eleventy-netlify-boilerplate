@@ -1,0 +1,26 @@
+// custom colors
+$bgBlue1: #004c97;
+$bgBlue2: #0080ff;
+$colorBlue1: #004a97;
+$colorDark1: #333;
+$bgGrey: #f9fafc;
+$borderGrey: #e6dbdb;
+$colorGrey1: #797687;
+$colorGrey2: #9694a1;
+$colorGrey3: #2b2350;
+
+// bs overrides
+$body-color: $colorGrey1;
+$link-hover-decoration: none;
+
+$line-height-base: 1.8;
+$btn-line-height: $line-height-base;
+
+$primary: #004a97;
+$card-spacer-x: 3rem;
+$card-spacer-y: 2rem;
+
+$navbar-nav-link-padding-x: 0;
+$nav-link-padding-y: 0;
+$navbar-dark-color: $white;
+$navbar-dark-hover-color: $white;
