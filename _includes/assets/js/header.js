@@ -1,8 +1,10 @@
 (function($, window, document) {
   "use strict";
 
+  var currentSection = $('html').data('current');
+
   var $header = $('#navbar-main'),
-      headerInitial = 'navbar-dark',
+      headerInitial = currentSection === 'homepage' ? 'navbar-dark' : 'navbar-light navbar-fixed fixed-top',
       headerAlt = 'navbar-light bg-light navbar-fixed fixed-top shadow';
 
   var $headerBtn = $header.find('.btn'),

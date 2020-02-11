@@ -6,7 +6,7 @@
 	<body class="d-flex flex-column">
 
 		<header>
-      <nav id="navbar-main" class="navbar navbar-expand-md navbar-main navbar-dark">
+      <nav id="navbar-main" class="navbar navbar-expand-md navbar-main{% if section == 'homepage' %} navbar-dark{% else %} navbar-light navbar-fixed fixed-top{% endif %}">
         <div class="container">
           <a class="navbar-brand" href="{{ '/' | url }}">
             <img src="/_includes/assets/img/nvrk-logo-white.svg" alt="{{ metadata.title }}" class="main-logo" />
@@ -30,8 +30,8 @@
 		{% include "components/footer.njk" %}
 
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="_includes/assets/js/header.js"></script>
     <script src="_includes/dependencies/swiper/js/swiper.min.js"></script>
-    <script src="_includes/assets/js/swiper.js"></script>
     <script src="_includes/assets/js/swiper.js"></script>
 
 	</body>
