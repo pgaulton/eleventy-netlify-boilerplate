@@ -1,7 +1,7 @@
 ---
 title: New Home
 date: 2020-02-11T01:03:32.388Z
-permalink: /new-home/index.html
+permalink: /
 banner-title: >-
   Software, from concept to completion. Provider of industry standard SaaS
   solutions.
