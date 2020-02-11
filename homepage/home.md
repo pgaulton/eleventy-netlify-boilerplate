@@ -1,6 +1,6 @@
 ---
 title: New Home
-date: 2020-0211T01:03:32.388Z
+date: '2020-0211T01:03:32.388Z'
 permalink: /
 bannerTitle: >-
   Software, from concept to completion. Provider of industry standard SaaS
@@ -32,6 +32,7 @@ product3Description: >-
   Organize and communicate securely around cross-organizational working groups
   as the job demands.
 product3LinkUrl: /products/bridge
+companiesTitle: Trusted by industry leading companies
 section1Title: >-
   We are the leading provider of patented technology products that lower the
   cost of physical trade settlements for the commodity shipping and inspection
