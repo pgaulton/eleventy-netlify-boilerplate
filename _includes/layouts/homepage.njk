@@ -88,39 +88,41 @@ section: homepage
 
 <section>
   <div class="container pb-5">
-    <h5 class="my-5 text-center">
-      Trusted by industry leading companies
-    </h5>
+    <h5 class="my-5 text-center">{{ companiesTitle }}</h5>
 
-    <div class="row">
-      <div class="col-1">
-        <img src="media/brand/1.png" alt="Chevron" />
-      </div>
-      <div class="col-1">
-        <img src="media/brand/2.png" alt="ExxonMobil" />
-      </div>
-      <div class="col-1">
-        <img src="media/brand/3.png" alt="BP" />
-      </div>
-      <div class="col-1">
-        <img src="media/brand/4.png" alt="andeavor" />
-      </div>
-      <div class="col-1">
-        <img src="media/brand/5.png" alt="Marathon" />
-      </div>
-      <div class="col-1">
-        <img src="media/brand/6.png" alt="Amspec" />
-      </div>
-      <div class="col-1">
-        <img src="media/brand/7.png" alt="Inspectorate" />
-      </div>
-      <div class="col-1">
-        <img src="media/brand/8.png" alt="intertek" />
-      </div>
-      <div class="col-1">
-        <img src="media/brand/9.png" alt="SGS" />
+    <!-- @todo: replace swiper -->
+    <div class="swiper-container" id="logo-carousel" data-perpage="6" data-breakpoints='{"1024": {"slidesPerView": 4}, "768": {"slidesPerView": 4}, "620": {"slidesPerView": 3}}'>
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <div class="brand-logo"><img src="/_includes/assets/img/brand/1.png" alt="Chevron"></div>
+        </div>
+        <div class="swiper-slide">
+          <div class="brand-logo"><img src="/_includes/assets/img/brand/2.png" alt="ExxonMobil"></div>
+        </div>
+        <div class="swiper-slide">
+          <div class="brand-logo"><img src="/_includes/assets/img/brand/3.png" alt="BP"></div>
+        </div>
+        <div class="swiper-slide">
+          <div class="brand-logo"><img src="/_includes/assets/img/brand/4.png" alt="andeavor"></div>
+        </div>
+        <div class="swiper-slide">
+          <div class="brand-logo"><img src="/_includes/assets/img/brand/5.png" alt="Marathon"></div>
+        </div>
+        <div class="swiper-slide">
+          <div class="brand-logo"><img src="/_includes/assets/img/brand/6.png" alt="Amspec"></div>
+        </div>
+        <div class="swiper-slide">
+          <div class="brand-logo"><img src="/_includes/assets/img/brand/7.png" alt="Inspectorate"></div>
+        </div>
+        <div class="swiper-slide">
+          <div class="brand-logo"><img src="/_includes/assets/img/brand/8.png" alt="intertek"></div>
+        </div>
+        <div class="swiper-slide">
+          <div class="brand-logo"><img src="/_includes/assets/img/brand/9.png" alt="SGS"></div>
+        </div>
       </div>
     </div>
+
   </div>
 </section>
 
