@@ -51,42 +51,42 @@ collections:
       # @todo: create link widget - https://www.netlifycms.org/docs/custom-widgets
       - { label: "Banner Link Title", name: "bannerLinkTitle", widget: "string", required: false }
       - { label: "Banner Link URL", name: "bannerLinkUrl", widget: "string", required: false }
-      - { label: "Banner Image", name: "bannerImage", widget: "image", allow_multiple: false, required: false }
+      - { label: "Banner Image", name: "bannerImage", widget: "image",required: false }
       - { label: "Products Subtitle", name: "productsSubtitle", widget: "string", required: false }
       - { label: "Products Title", name: "productsTitle", widget: "string", required: false }
-      - { label: "Product #1 Image", name: "product1Image", widget: "image", allow_multiple: false, required: false }
+      - { label: "Product #1 Image", name: "product1Image", widget: "image",required: false }
       - { label: "Product #1 Title", name: "product1Title", widget: "string", required: false }
       - { label: "Product #1 Description", name: "product1Description", widget: "markdown", required: false }
       - { label: "Product #1 Link URL", name: "product1LinkUrl", widget: "string", required: false }
-      - { label: "Product #2 Image", name: "product2Image", widget: "image", allow_multiple: false, required: false }
+      - { label: "Product #2 Image", name: "product2Image", widget: "image",required: false }
       - { label: "Product #2 Title", name: "product2Title", widget: "string", required: false }
       - { label: "Product #2 Description", name: "product2Description", widget: "markdown", required: false }
       - { label: "Product #2 Link URL", name: "product2LinkUrl", widget: "string", required: false }
-      - { label: "Product #3 Image", name: "product3Image", widget: "image", allow_multiple: false, required: false }
+      - { label: "Product #3 Image", name: "product3Image", widget: "image",required: false }
       - { label: "Product #3 Title", name: "product3Title", widget: "string", required: false }
       - { label: "Product #3 Description", name: "product3Description", widget: "markdown", required: false }
       - { label: "Product #3 Link URL", name: "product3LinkUrl", widget: "string", required: false }
       - { label: "Companies Title", name: "companiesTitle", widget: "string", required: false }
-      - { label: "Companies Images", name: "companiesImages", widget: "image", allow_multiple: true, required: false }
+      # - { label: "Companies Images", name: "companiesImages", widget: "image", allow_multiple: true, required: false }
       - { label: "Section 1 Title", name: "section1Title", widget: "string", required: false }
       - { label: "Section 1 Body", name: "section1Body", widget: "markdown", required: false }
       - { label: "Technologies Title", name: "technologiesTitle", widget: "string", required: false }
-      - { label: "Technology #1 Image", name: "technology1Image", widget: "image", allow_multiple: false, required: false }
+      - { label: "Technology #1 Image", name: "technology1Image", widget: "image",required: false }
       - { label: "Technology #1 Title", name: "technology1Title", widget: "string", required: false }
       - { label: "Technology #1 Description", name: "technology1Description", widget: "markdown", required: false }
-      - { label: "Technology #2 Image", name: "technology2Image", widget: "image", allow_multiple: false, required: false }
+      - { label: "Technology #2 Image", name: "technology2Image", widget: "image",required: false }
       - { label: "Technology #2 Title", name: "technology2Title", widget: "string", required: false }
       - { label: "Technology #2 Description", name: "technology2Description", widget: "markdown", required: false }
-      - { label: "Technology #3 Image", name: "technology3Image", widget: "image", allow_multiple: false, required: false }
+      - { label: "Technology #3 Image", name: "technology3Image", widget: "image",required: false }
       - { label: "Technology #3 Title", name: "technology3Title", widget: "string", required: false }
       - { label: "Technology #3 Description", name: "technology3Description", widget: "markdown", required: false }
-      - { label: "Technology #4 Image", name: "technology4Image", widget: "image", allow_multiple: false, required: false }
+      - { label: "Technology #4 Image", name: "technology4Image", widget: "image",required: false }
       - { label: "Technology #4 Title", name: "technology4Title", widget: "string", required: false }
       - { label: "Technology #4 Description", name: "technology4Description", widget: "markdown", required: false }
-      - { label: "Technology #5 Image", name: "technology5Image", widget: "image", allow_multiple: false, required: false }
+      - { label: "Technology #5 Image", name: "technology5Image", widget: "image",required: false }
       - { label: "Technology #5 Title", name: "technology5Title", widget: "string", required: false }
       - { label: "Technology #5 Description", name: "technology5Description", widget: "markdown", required: false }
-      - { label: "Technology #6 Image", name: "technology6Image", widget: "image", allow_multiple: false, required: false }
+      - { label: "Technology #6 Image", name: "technology6Image", widget: "image",required: false }
       - { label: "Technology #6 Title", name: "technology6Title", widget: "string", required: false }
       - { label: "Technology #6 Description", name: "technology6Description", widget: "markdown", required: false }
       - { label: "Section 2 Title", name: "section2Title", widget: "string", required: false }
@@ -96,16 +96,16 @@ collections:
       - { label: "Section 2 Link URL", name: "section2LinkUrl", widget: "string", required: false }
       - { label: "Resources Subtitle", name: "resourcesSubtitle", widget: "string", required: false }
       - { label: "Resources Title", name: "resourcesTitle", widget: "string", required: false }
-      - { label: "Resource #1 Image", name: "resource1Image", widget: "image", allow_multiple: false, required: false }
+      - { label: "Resource #1 Image", name: "resource1Image", widget: "image",required: false }
       - { label: "Resource #1 Link", name: "resource1Link", widget: "string", required: false }
       - { label: "Resource #1 Title", name: "resource1Title", widget: "string", required: false }
-      - { label: "Resource #2 Image", name: "resource2Image", widget: "image", allow_multiple: false, required: false }
+      - { label: "Resource #2 Image", name: "resource2Image", widget: "image",required: false }
       - { label: "Resource #2 Link", name: "resource2Link", widget: "string", required: false }
       - { label: "Resource #2 Title", name: "resource2Title", widget: "string", required: false }
-      - { label: "Resource #3 Image", name: "resource3Image", widget: "image", allow_multiple: false, required: false }
+      - { label: "Resource #3 Image", name: "resource3Image", widget: "image",required: false }
       - { label: "Resource #3 Link", name: "resource3Link", widget: "string", required: false }
       - { label: "Resource #3 Title", name: "resource3Title", widget: "string", required: false }
-      - { label: "Resource #4 Image", name: "resource4Image", widget: "image", allow_multiple: false, required: false }
+      - { label: "Resource #4 Image", name: "resource4Image", widget: "image",required: false }
       - { label: "Resource #4 Link", name: "resource4Link", widget: "string", required: false }
       - { label: "Resource #4 Title", name: "resource4Title", widget: "string", required: false }
       - { label: "Section 3 Title", name: "section3Title", widget: "string", required: false }
