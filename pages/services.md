@@ -5,9 +5,10 @@ permalink: /services.html
 eleventyNavigation:
   key: Services
   order: 1
+pageImage: /static/img/services-1.png
 ---
-## Life at Navarik 
+## Need help migrating to the Cloud? 
 
-Navarik is comprised of a team of highly motivated people working together in pursuit of product excellence and service to our customers. We seek brilliant, hardworking people who want to be part of a growing team and fun environment where leading edge technology and solutions are created and successfully commercialized. Every team member is empowered to learn, grow and share his or her knowledge and experience.
+Taking advantage of cloud technology can deliver huge benefits to any organisation. From scalability to business continuity and flexibility, leveraging the cloud can revolutionise your business. However, it can be tough to get things right; that's where we come in.
 
-At Navarik, the overall well-being of our team is important. We believe in creating a culture that supports and provides opportunities for personal and professional development so that we can collectively provide the best experience for our clients and teams. We are located near the Olympic Village, at the south end of False Creek, near Science world and the Main Street SkyTrain station.
+With our extensive experience creating and maintaining SaaS applications in the cloud, Navarik can help you make the most of cloud technology. Find out more:
