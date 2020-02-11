@@ -23,7 +23,14 @@ section: page
       <div class="col-lg-7">
         {{ layoutContent | safe }}
       </div>
-      <div class="col-lg-5">
+      <div class="col-lg-4 offset-lg-1">
+        <img src="{{ pageImage }}" alt="TODO" />
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-lg-11">
+        {{ pageContent2 | safe }}
       </div>
     </div>
   </div>
