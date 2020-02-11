@@ -40,7 +40,7 @@ collections:
   - name: "homepage"
     label: "Homepage"
     folder: "homepage"
-    create: false
+    create: true
     slug: "{{slug}}"
     fields:
       - { label: "Publish Date", name: "date", widget: "datetime" }
