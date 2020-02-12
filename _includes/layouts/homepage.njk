@@ -10,7 +10,7 @@ section: homepage
         {{ bannerTitle }}
       </h2>
 
-      <p>{{ bannerBody }}</p>
+      {% markdown bannerBody %}
 
       <div>
         <a class="btn btn-rounded btn-outline-light" href="{{ bannerLinkUrl }}">
@@ -45,7 +45,7 @@ section: homepage
             <img src="{{ product1Image }}" class="pb-5 w-75" alt="{{ product1Title }}" />
             <h4 class="card-title">{{ product1Title }}</h4>
             <div class="card-text">
-              <p>{{ product1Description }}</p>
+              {% markdown product1Description %}
             </div>
             <a href="{{ product1LinkUrl }}" class="btn btn-link text-muted">
               <i class="fas fa-arrow-right fa-2x"></i>
@@ -59,7 +59,7 @@ section: homepage
             <img src="{{ product2Image }}" class="pb-5 w-75" alt="{{ product2Title }}" />
             <h4 class="card-title">{{ product2Title }}</h4>
             <div class="card-text">
-              <p>{{ product2Description }}</p>
+              {% markdown product2Description %}
             </div>
             <a href="{{ product2LinkUrl }}" class="btn btn-link text-muted">
               <i class="fas fa-arrow-right fa-2x"></i>
@@ -73,7 +73,7 @@ section: homepage
             <img src="{{ product3Image }}" class="pb-5 w-75" alt="{{ product3Title }}" />
             <h4 class="card-title">{{ product3Title }}</h4>
             <div class="card-text">
-              <p>{{ product3Description }}</p>
+              {% markdown product3Description %}
             </div>
             <a href="{{ product3LinkUrl }}" class="btn btn-link text-muted">
               <i class="fas fa-arrow-right fa-2x"></i>
@@ -131,7 +131,7 @@ section: homepage
     <div class="row">
       <div class="col-lg-6">
         <h3 class="section-title mb-4">{{ section1Title }}</h3>
-        {{ section1Body }}
+        {% markdown section1Body %}
       </div>
       <div class="col-lg-6"></div>
     </div>
@@ -148,42 +148,42 @@ section: homepage
         <img src="{{ technology1Image }}" class="pb-4" alt="{{ technology1Title }}" />
         <h5 class="card-title mb-3">{{ technology1Title }}</h5>
         <div class="card-text">
-          <p>{{ technology1Description }}</p>
+          {% markdown technology1Description %}
         </div>
       </div>
       <div class="col-lg-4 col-md-6 mb-5">
         <img src="{{ technology2Image }}" class="pb-4" alt="{{ technology2Title }}" />
         <h5 class="card-title mb-3">{{ technology2Title }}</h5>
         <div class="card-text">
-          <p>{{ technology2Description }}</p>
+          {% markdown technology2Description %}
         </div>
       </div>
       <div class="col-lg-4 col-md-6 mb-5">
         <img src="{{ technology3Image }}" class="pb-4" alt="{{ technology3Title }}" />
         <h5 class="card-title mb-3">{{ technology3Title }}</h5>
         <div class="card-text">
-          <p>{{ technology3Description }}</p>
+          {% markdown technology3Description %}
         </div>
       </div>
       <div class="col-lg-4 col-md-6 mb-5">
         <img src="{{ technology4Image }}" class="pb-4" alt="{{ technology4Title }}" />
         <h5 class="card-title mb-3">{{ technology4Title }}</h5>
         <div class="card-text">
-          <p>{{ technology4Description }}</p>
+          {% markdown technology4Description %}
         </div>
       </div>
       <div class="col-lg-4 col-md-6 mb-5">
         <img src="{{ technology5Image }}" class="pb-4" alt="{{ technology5Title }}" />
         <h5 class="card-title mb-3">{{ technology5Title }}</h5>
         <div class="card-text">
-          <p>{{ technology5Description }}</p>
+          {% markdown technology5Description %}
         </div>
       </div>
       <div class="col-lg-4 col-md-6 mb-5">
         <img src="{{ technology6Image }}" class="pb-4" alt="{{ technology6Title }}" />
         <h5 class="card-title mb-3">{{ technology6Title }}</h5>
         <div class="card-text">
-          <p>{{ technology6Description }}</p>
+          {% markdown technology6Description %}
         </div>
       </div>
 
@@ -196,7 +196,7 @@ section: homepage
     <div class="row align-items-center justify-content-between text-white">
       <div class="col-lg-7">
         <h2 class="mb-3">{{ section2Title }}</h2>
-        <h4>{{ section2Body }}</h4>
+        {% markdown section2Body %}
       </div>
       <div class="col-lg-5 text-right">
         <a href="{{ section2LinkUrl }}" class="btn btn-rounded btn-lg btn-light shadow">
@@ -265,7 +265,7 @@ section: homepage
 
     <div class="row">
       <div class="col-8 offset-2">
-        <p>{{ section3Body }}</p>    
+        {% markdown section3Body %}
       </div>
     </div>
   </div>
