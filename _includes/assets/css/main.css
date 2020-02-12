@@ -9911,4 +9911,8 @@ img {
   padding-top: 120px;
 }
 
+.page-section p, .page-section h2 {
+  margin-bottom: 40px;
+}
+
 /*# sourceMappingURL=main.css.map */

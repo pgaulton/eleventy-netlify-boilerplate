@@ -88,6 +88,7 @@ module.exports = function(eleventyConfig) {
     .use(markdownItAnchor, opts)
   );
 
+  const markdownItRenderer = new markdownIt(options)
   eleventyConfig.addShortcode("markdown", function(content) {
     return content ? markdownItRenderer.render(content) : '';
   });
