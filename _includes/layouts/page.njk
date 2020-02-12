@@ -30,7 +30,11 @@ section: page
 
     <div class="row">
       <div class="col-lg-11">
-        {{ pageContent2 | safe }}
+      
+      {% if pageContent2 %}
+        {% markdown pageContent2 %}
+      {% endif %}
+
       </div>
     </div>
   </div>

@@ -88,6 +88,10 @@ module.exports = function(eleventyConfig) {
     .use(markdownItAnchor, opts)
   );
 
+  eleventyConfig.addShortcode("markdown", function(content) {
+    return markdownItRenderer.render(content);
+  });
+
   return {
     templateFormats: ["md", "njk", "html", "liquid"],
 
