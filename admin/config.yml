@@ -55,7 +55,7 @@ collections:
         fields:
           - { label: "Key", name: "key", widget: "string" }
           - { label: "Order", name: "order", widget: "number", default: 0 }
-          - { label: "Parent Key", name: "parent", widget: "hidden", default: "products"} }
+          - { label: "Parent Key", name: "parent", widget: "hidden", default: "products" }
       - { label: "Body", name: "body", widget: "markdown" }
       - { label: "Product Image 1", name: "productImage1", widget: "image", required: false }
       - { label: "Product Content 2", name: "productContent2", widget: "markdown", required: false }
