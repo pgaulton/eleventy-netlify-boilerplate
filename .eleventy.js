@@ -89,7 +89,7 @@ module.exports = function(eleventyConfig) {
   );
 
   eleventyConfig.addShortcode("markdown", function(content) {
-    return markdownItRenderer.render(content);
+    return content ? markdownItRenderer.render(content) : '';
   });
 
   return {
