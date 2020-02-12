@@ -1,8 +1,19 @@
 {% set navPages = collections.all | eleventyNavigation %}
 <ul class="navbar-nav ml-auto">
 {%- for entry in navPages %}
+  {% if entry.children.length == 0 %}
   <li class="nav-item">
     <a class="nav-link{% if entry.url == page.url %} active{% endif %}" href="{{ entry.url | url }}">{{ entry.title }}</a>
   </li>
+  {% else %}
+  <li class="nav-item dropdown">
+    <button class="btn btn-link nav-link" id="navbarDropdown-{{ entry.key }}" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">{{ entry.title }}</button>
+    <div class="dropdown-menu" aria-labelledby="navbarDropdown-{{ entry.key }}">
+    {%- for child in entry.children %}
+      <a class="dropdown-item" href="{{ child.url | url }}">{{ child.title }}</a>
+    {%- endfor %}
+    </div>
+  </li>
+  {% endif %}
 {%- endfor %}
 </ul>

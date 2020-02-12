@@ -5,6 +5,6 @@ permalink: /company/about.html
 eleventyNavigation:
   key: About
   order: 0
-  parentKey: Company
+  parent: Company
 ---
 # ABOUT!

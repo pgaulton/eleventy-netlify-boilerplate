@@ -1,18 +1,26 @@
 (function($, window, document) {
   "use strict";
 
+  // $(document).ready(function(){
+  //   $(".dropdown").hover(function(){
+  //       var dropdownMenu = $(this).children(".dropdown-menu");
+  //       if (dropdownMenu.is(":visible")) {
+  //           dropdownMenu.parent().toggleClass("open");
+  //       }
+  //   });
+  // }); 
+
   var currentSection = $('html').data('current');
 
   var $header = $('#navbar-main'),
       headerInitial = currentSection === 'homepage' ? 'navbar-dark' : 'navbar-light navbar-fixed fixed-top',
       headerAlt = 'navbar-light bg-light navbar-fixed fixed-top shadow';
 
-  var $headerBtn = $header.find('.btn'),
+  var $headerBtn = $header.find('.btn-rounded'),
       headerBtnInitial = 'btn-light shadow',
       headerBtnAlt = 'btn-outline-primary';
 
   $(window).on("scroll load", function() {
-    this.console.log('scroll load')
       if ($(this).scrollTop() >= 30) {
           if ($header.length) {
             $header.removeClass(headerInitial).addClass(headerAlt);
