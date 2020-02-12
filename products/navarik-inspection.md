@@ -6,6 +6,8 @@ eleventyNavigation:
   key: Navarik NI
   order: 0
   parent: Products
+productSubtitle: Get data & paid faster
+productTitle: Industry standard for cargo owner & inspector nominations
 productImage1: /static/img/ni-1.png
 productContent2: >-
   Today, many of the world’s largest oil companies, including BP, Chevron, and
