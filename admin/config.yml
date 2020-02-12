@@ -35,7 +35,7 @@ collections:
         widget: "object"
         fields:
           - { label: "Key", name: "key", widget: "string" }
-          - { label: "Key", name: "key", widget: "string" }
+          - { label: "Order", name: "order", widget: "number", default: 0 }
           - { label: "Parent Key", name: "parentKey", widget: "string", required: false }
       - { label: "Body", name: "body", widget: "markdown" }
       - { label: "Page Image", name: "pageImage", widget: "image", required: false }
