@@ -37,9 +37,9 @@ collections:
           - { label: "Key", name: "key", widget: "string" }
           - { label: "Order", name: "order", widget: "number", default: 0 }
           - { label: "Parent Key", name: "parent", widget: "string", required: false }
-      - { label: "Body", name: "body", widget: "markdown" }
-      - { label: "Page Image", name: "pageImage", widget: "image", required: false }
-      - { label: "Page Content 2", name: "pageContent2", widget: "markdown", required: false }
+      - { label: "Content 1", name: "body", widget: "markdown" }
+      - { label: "Image", name: "pageImage", widget: "image", required: false }
+      - { label: "Content 2", name: "pageContent2", widget: "markdown", required: false }
   - name: "products"
     label: "Products"
     folder: "products"
@@ -55,12 +55,14 @@ collections:
         fields:
           - { label: "Key", name: "key", widget: "string" }
           - { label: "Order", name: "order", widget: "number", default: 0 }
-          - { label: "Parent Key", name: "parent", widget: "hidden", default: "products" }
-      - { label: "Body", name: "body", widget: "markdown" }
-      - { label: "Product Image 1", name: "productImage1", widget: "image", required: false }
-      - { label: "Product Content 2", name: "productContent2", widget: "markdown", required: false }
-      - { label: "Product Image 2", name: "productImage2", widget: "image", required: false }
-      - { label: "Product Content 3", name: "productContent3", widget: "markdown", required: false }
+          - { label: "Parent Key", name: "parent", widget: "hidden", default: "Products" }
+      - { label: "Subtitle", name: "productSubtitle", widget: "string", required: false }
+      - { label: "Title", name: "productTitle", widget: "string", required: false }
+      - { label: "Content 1", name: "body", widget: "markdown" }
+      - { label: "Image 1", name: "productImage1", widget: "image", required: false }
+      - { label: "Content 2", name: "productContent2", widget: "markdown", required: false }
+      - { label: "Image 2", name: "productImage2", widget: "image", required: false }
+      - { label: "Content 3", name: "productContent3", widget: "markdown", required: false }
   - name: "homepage"
     label: "Homepage"
     folder: "homepage"

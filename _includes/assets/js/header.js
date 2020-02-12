@@ -1,15 +1,6 @@
 (function($, window, document) {
   "use strict";
 
-  // $(document).ready(function(){
-  //   $(".dropdown").hover(function(){
-  //       var dropdownMenu = $(this).children(".dropdown-menu");
-  //       if (dropdownMenu.is(":visible")) {
-  //           dropdownMenu.parent().toggleClass("open");
-  //       }
-  //   });
-  // }); 
-
   var currentSection = $('html').data('current');
 
   var $header = $('#navbar-main'),

@@ -5,7 +5,7 @@ permalink: products/navarik-ni.html
 eleventyNavigation:
   key: Navarik NI
   order: 0
-  parent: products
+  parent: Products
 productImage1: /static/img/ni-1.png
 productContent2: >-
   Today, many of the world’s largest oil companies, including BP, Chevron, and
