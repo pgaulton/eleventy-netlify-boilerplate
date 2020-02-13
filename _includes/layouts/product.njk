@@ -19,19 +19,21 @@ section: product
 
 <section class="page-section">
   <div class="container">
-    <div class="row">
+    <div class="row pb-5">
       <div class="col-lg-5">
         <img src="{{ productImage1 }}" alt="TODO" />
       </div>
-      <div class="col-lg-7">
-        {{ layoutContent | safe }}
+      <div class="col-lg-6">
+        <div class="pl-5">
+          <h3 class="subtitle">{{ productSubtitle }}</h3>
+          <h2 class="mb-5">{{ productTitle }}</h2>
+          {{ layoutContent | safe }}
+        </div>
       </div>
     </div>
 
     <div class="row">
       <div class="col-lg-11">
-        <h3 class="subtitle">{{ productSubtitle }}</h3>
-        <h2 class="mb-5">{{ productTitle }}</h2>
         {% markdown productContent2 %}
       </div>
     </div>

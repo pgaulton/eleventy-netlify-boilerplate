@@ -58,7 +58,7 @@ collections:
           - { label: "Parent Key", name: "parent", widget: "hidden", default: "Products" }
       - { label: "Subtitle", name: "productSubtitle", widget: "string", required: false }
       - { label: "Title", name: "productTitle", widget: "string", required: false }
-      - { label: "Content 1", name: "body", widget: "markdown" }
+      - { label: "Content 1", name: "body", widget: "markdown", required: false }
       - { label: "Image 1", name: "productImage1", widget: "image", required: false }
       - { label: "Content 2", name: "productContent2", widget: "markdown", required: false }
       - { label: "Image 2", name: "productImage2", widget: "image", required: false }
