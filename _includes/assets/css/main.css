@@ -9923,4 +9923,39 @@ img {
   margin-top: -20px;
 }
 
+.animate-element-contact {
+  position: relative;
+  height: 465px;
+  width: 408px;
+  bottom: -135px;
+}
+
+.animate-element-contact img {
+  position: absolute;
+  bottom: 0;
+}
+
+.animate-element-contact img:first-child {
+  left: 5px;
+  bottom: 55px;
+}
+
+.animate-element-contact img:nth-child(2) {
+  bottom: 41px;
+  left: 128px;
+}
+
+.animate-element-contact img:nth-child(3) {
+  right: 0;
+}
+
+.animate-element-contact img:nth-child(4) {
+  bottom: 0;
+  left: 110px;
+}
+
+.contact-page-banner {
+  height: 700px;
+}
+
 /*# sourceMappingURL=main.css.map */

@@ -2,8 +2,65 @@
 layout: layouts/base.njk
 section: contact
 ---
-<h1>{{ title }}</h1>
+<section class="page-banner contact-page-banner">
+  <div class="container h-100">
+    <div class="page-title-wrapper h-100">
+      <div class="row h-100">
+        <div class="col-lg-8 d-flex flex-column justify-content-center">
+          {{ layoutContent | safe }}
+        </div>
+        <div class="col-lg-4">
+          <div class="animate-element-contact">
+            <img src="/_includes/assets/img/animated/001.png" alt="" class="" />
+            <img src="/_includes/assets/img/animated/002.png" alt="" class="" />
+            <img src="/_includes/assets/img/animated/003.png" alt="" class="" />
+            <img src="/_includes/assets/img/animated/004.png" alt="man" class="" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
-{{ layoutContent | safe }}
+<section class="page-section">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-6">
+        {% markdown location %}
 
-{% include "components/form.njk" %}
+        <ul class="list-unstyled">
+          {% if telephone1 %}
+          <li>{{ telephone1 }}</li>
+          {% endif %}
+          {% if telephone2 %}
+          <li>{{ telephone2 }}</li>
+          {% endif %}
+        </ul>
+      </div>
+      <div class="col-lg-6">
+        {% if contactTitle %}
+        <h6>{{ contactTitle }}</h6>
+        {% endif %}
+
+        <ul class="list-unstyled">
+          {% if email1 %}
+          <li>{{ email1 }}</li>
+          {% endif %}
+          {% if email2 %}
+          <li>{{ email2 }}</li>
+          {% endif %}
+          {% if website %}
+          <li>{{ website }}</li>
+          {% endif %}
+          {% if twitter %}
+          <li>{{ twitter }}</li>
+          {% endif %}
+          {% if linkedIn %}
+          <li>{{ linkedIn }}</li>
+          {% endif %}
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+

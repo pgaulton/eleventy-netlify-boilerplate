@@ -20,7 +20,6 @@ collections:
       - { label: "Summary", name: "summary", widget: "text" }
       - { label: "Tags", name: "tags", widget: "list", default: ["post"] }
       - { label: "Body", name: "body", widget: "markdown" }
-  # Our pages e.g. About
   - name: "pages"
     label: "Page"
     folder: "pages"
@@ -136,3 +135,29 @@ collections:
       - { label: "Resource #4 Title", name: "resource4Title", widget: "string", required: false }
       - { label: "Section 3 Title", name: "section3Title", widget: "string", required: false }
       - { label: "Section 3 Body", name: "section3Body", widget: "markdown", required: false }
+  - name: "contact"
+    label: "Contact"
+    folder: "contact"
+    create: false
+    slug: "{{slug}}"
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Publish Date", name: "date", widget: "datetime" }
+      - { label: "Permalink", name: "permalink", widget: "string" }
+      - label: "Navigation"
+        name: "eleventyNavigation"
+        widget: "object"
+        fields:
+          - { label: "Key", name: "key", widget: "string" }
+          - { label: "Order", name: "order", widget: "number", default: 0 }
+          - { label: "Parent Key", name: "parent", widget: "string", required: false }
+      - { label: "Body", name: "body", widget: "markdown" }
+      - { label: "Location", name: "location", widget: "markdown", required: false }
+      - { label: "Telephone 1", name: "telephone1", widget: "string", required: false }
+      - { label: "Telephone 2", name: "telephone2", widget: "string", required: false }
+      - { label: "Contact Title", name: "contactTitle", widget: "string", required: false }
+      - { label: "Email 1", name: "email1", widget: "string", required: false }
+      - { label: "Email 2", name: "email2", widget: "string", required: false }
+      - { label: "Website", name: "website", widget: "string", required: false }
+      - { label: "Twitter", name: "twitter", widget: "string", required: false }
+      - { label: "LinkedIn", name: "linkedIn", widget: "string", required: false }

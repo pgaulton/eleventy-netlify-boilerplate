@@ -267,3 +267,40 @@ img {
 .dropdown .dropdown-menu {
   margin-top: -20px;
 }
+
+
+.animate-element-contact {
+  position: relative;
+  // z-index: 222;
+  height: 465px;
+  width: 408px;
+  bottom: -135px;
+
+  img {
+    position: absolute;
+    bottom: 0;
+
+    &:first-child {
+      left: 5px;
+      bottom: 55px;
+    }
+
+    &:nth-child(2) {
+      bottom: 41px;
+      left: 128px;
+    }
+
+    &:nth-child(3) {
+      right: 0;
+    }
+
+    &:nth-child(4) {
+      bottom: 0;
+      left: 110px;
+    }
+  }
+}
+
+.contact-page-banner {
+  height: 700px;
+}
