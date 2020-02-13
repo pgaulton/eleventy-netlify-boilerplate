@@ -95,6 +95,8 @@ collections:
       # - { label: "Companies Images", name: "companiesImages", widget: "image", allow_multiple: true, required: false }
       - { label: "Section 1 Title", name: "section1Title", widget: "string", required: false }
       - { label: "Section 1 Body", name: "section1Body", widget: "markdown", required: false }
+      - { label: "Section 1 Image 1", name: "section1Image1", widget: "image",required: false }
+      - { label: "Section 1 Image 2", name: "section1Image2", widget: "image",required: false }
       - { label: "Technologies Title", name: "technologiesTitle", widget: "string", required: false }
       - { label: "Technology #1 Image", name: "technology1Image", widget: "image",required: false }
       - { label: "Technology #1 Title", name: "technology1Title", widget: "string", required: false }

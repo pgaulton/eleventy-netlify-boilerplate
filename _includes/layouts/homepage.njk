@@ -12,16 +12,20 @@ section: homepage
 
       {% markdown bannerBody %}
 
+      {% if bannerLinkTitle %}
       <div>
         <a class="btn btn-rounded btn-outline-light" href="{{ bannerLinkUrl }}">
           {{ bannerLinkTitle }}
         </a>
       </div>
+      {% endif %}
     </div>
 
+    {% if bannerImage %}
     <div>
-      <img src="{{ bannerImage }}" alt="mockup" class="shadow-lg rounded" />
+      <img src="{{ bannerImage | url }}" alt="mockup" />
     </div>
+    {% endif %}
 
   </div>
 </section>
@@ -39,48 +43,60 @@ section: homepage
     </div>
 
     <div class="row">
+      {% if product1Image or product1Title or product1Description or product1LinkUrl %}
       <div class="col-lg-4">
         <div class="card py-2">
           <div class="card-body">
-            <img src="{{ product1Image }}" class="pb-5 w-75" alt="{{ product1Title }}" />
+            {% if product1Image %}
+            <img src="{{ product1Image | url }}" class="pb-5 w-75" alt="{{ product1Title }}" />
+            {% endif %}
             <h4 class="card-title">{{ product1Title }}</h4>
             <div class="card-text">
               {% markdown product1Description %}
             </div>
-            <a href="{{ product1LinkUrl }}" class="btn btn-link text-muted">
+            <a href="{{ product1LinkUrl | url }}" class="btn btn-link text-muted">
               <i class="fas fa-arrow-right fa-2x"></i>
             </a>
           </div>
         </div>
       </div>
+      {% endif %}
+      {% if product2Image or product2Title or product2Description or product2LinkUrl %}
       <div class="col-lg-4">
         <div class="card py-2">
           <div class="card-body">
-            <img src="{{ product2Image }}" class="pb-5 w-75" alt="{{ product2Title }}" />
+            {% if product2Image %}
+            <img src="{{ product2Image | url }}" class="pb-5 w-75" alt="{{ product2Title }}" />
+            {% endif %}
             <h4 class="card-title">{{ product2Title }}</h4>
             <div class="card-text">
               {% markdown product2Description %}
             </div>
-            <a href="{{ product2LinkUrl }}" class="btn btn-link text-muted">
+            <a href="{{ product2LinkUrl | url }}" class="btn btn-link text-muted">
               <i class="fas fa-arrow-right fa-2x"></i>
             </a>
           </div>
         </div>
       </div>
+      {% endif %}
+      {% if product3Image or product3Title or product3Description or product3LinkUrl %}
       <div class="col-lg-4">
         <div class="card py-2">
           <div class="card-body">
-            <img src="{{ product3Image }}" class="pb-5 w-75" alt="{{ product3Title }}" />
+            {% if product3Image %}
+            <img src="{{ product3Image | url }}" class="pb-5 w-75" alt="{{ product3Title }}" />
+            {% endif %}
             <h4 class="card-title">{{ product3Title }}</h4>
             <div class="card-text">
               {% markdown product3Description %}
             </div>
-            <a href="{{ product3LinkUrl }}" class="btn btn-link text-muted">
+            <a href="{{ product3LinkUrl | url }}" class="btn btn-link text-muted">
               <i class="fas fa-arrow-right fa-2x"></i>
             </a>
           </div>
         </div>
       </div>
+      {% endif %}
     </div>
 
   </div>
@@ -129,11 +145,20 @@ section: homepage
 <section>
   <div class="container">
     <div class="row">
-      <div class="col-lg-6">
+      <div class="col-lg-6  my-5">
         <h3 class="section-title mb-4">{{ section1Title }}</h3>
         {% markdown section1Body %}
       </div>
-      <div class="col-lg-6"></div>
+      <div class="col-lg-6">
+        <div class="homepage-section1-images">
+          {% if section1Image1 %}
+          <img src="{{ section1Image1 | url }}" class="" alt="todo" />
+          {% endif %}
+          {% if section1Image2 %}
+          <img src="{{ section1Image2 | url }}" class="" alt="todo" />
+          {% endif %}
+        </div>
+      </div>
     </div>
   </div>
 </section>
@@ -144,49 +169,72 @@ section: homepage
       <h2>{{ technologiesTitle }}</h2>
     </div>
     <div class="row mb-5">
+      {% if technology1Image or technology1Title or technology1Description %}
       <div class="col-lg-4 col-md-6 mb-5">
-        <img src="{{ technology1Image }}" class="pb-4" alt="{{ technology1Title }}" />
+        {% if technology1Image %}
+        <img src="{{ technology1Image | url }}" class="pb-4" alt="{{ technology1Title }}" />
+        {% endif %}
         <h5 class="card-title mb-3">{{ technology1Title }}</h5>
         <div class="card-text">
           {% markdown technology1Description %}
         </div>
       </div>
+      {% endif %}
+      {% if technology2Image or technology2Title or technology2Description %}
       <div class="col-lg-4 col-md-6 mb-5">
-        <img src="{{ technology2Image }}" class="pb-4" alt="{{ technology2Title }}" />
+        {% if technology2Image %}
+        <img src="{{ technology2Image | url }}" class="pb-4" alt="{{ technology2Title }}" />
+        {% endif %}
         <h5 class="card-title mb-3">{{ technology2Title }}</h5>
         <div class="card-text">
           {% markdown technology2Description %}
         </div>
       </div>
+      {% endif %}
+      {% if technology3Image or technology3Title or technology3Description %}
       <div class="col-lg-4 col-md-6 mb-5">
-        <img src="{{ technology3Image }}" class="pb-4" alt="{{ technology3Title }}" />
+        {% if technology3Image %}
+        <img src="{{ technology3Image | url }}" class="pb-4" alt="{{ technology3Title }}" />
+        {% endif %}
         <h5 class="card-title mb-3">{{ technology3Title }}</h5>
         <div class="card-text">
           {% markdown technology3Description %}
         </div>
       </div>
+      {% endif %}
+      {% if technology4Image or technology4Title or technology4Description %}
       <div class="col-lg-4 col-md-6 mb-5">
-        <img src="{{ technology4Image }}" class="pb-4" alt="{{ technology4Title }}" />
+        {% if technology4Image %}
+        <img src="{{ technology4Image | url }}" class="pb-4" alt="{{ technology4Title }}" />
+        {% endif %}
         <h5 class="card-title mb-3">{{ technology4Title }}</h5>
         <div class="card-text">
           {% markdown technology4Description %}
         </div>
       </div>
+      {% endif %}
+      {% if technology5Image or technology5Title or technology5Description %}
       <div class="col-lg-4 col-md-6 mb-5">
-        <img src="{{ technology5Image }}" class="pb-4" alt="{{ technology5Title }}" />
+        {% if technology5Image %}
+        <img src="{{ technology5Image | url }}" class="pb-4" alt="{{ technology5Title }}" />
+        {% endif %}
         <h5 class="card-title mb-3">{{ technology5Title }}</h5>
         <div class="card-text">
           {% markdown technology5Description %}
         </div>
       </div>
+      {% endif %}
+      {% if technology6Image or technology6Title or technology6Description %}
       <div class="col-lg-4 col-md-6 mb-5">
-        <img src="{{ technology6Image }}" class="pb-4" alt="{{ technology6Title }}" />
+        {% if technology6Image %}
+        <img src="{{ technology6Image | url }}" class="pb-4" alt="{{ technology6Title }}" />
+        {% endif %}
         <h5 class="card-title mb-3">{{ technology6Title }}</h5>
         <div class="card-text">
           {% markdown technology6Description %}
         </div>
       </div>
-
+      {% endif %}
     </div>
   </div>
 </section>
@@ -199,9 +247,11 @@ section: homepage
         {% markdown section2Body %}
       </div>
       <div class="col-lg-5 text-right">
-        <a href="{{ section2LinkUrl }}" class="btn btn-rounded btn-lg btn-light shadow">
+        {% if section2LinkTitle %}
+        <a href="{{ section2LinkUrl | url }}" class="btn btn-rounded btn-lg btn-light shadow">
           {{ section2LinkTitle }}
         </a>
+        {% endif %}
       </div>
     </div>
   </div>
@@ -215,46 +265,62 @@ section: homepage
     </div>
 
     <div class="row">
+      {% if resource1Image or resource1Title %}
       <div class="col-6">
-        <a href="{{ resource1Link }}">
+        <a href="{{ resource1Link | url }}">
           <div class="media p-5 mb-4 rounded shadow">
-            <img src="{{ resource1Image }}" class="mr-3" alt="{{ resource1Title }}">
+            {% if resource1Image %}
+            <img src="{{ resource1Image | url }}" class="mr-3" alt="{{ resource1Title }}">
+            {% endif %}
             <div class="media-body align-self-center">
               {{ resource1Title }}
             </div>
           </div>
         </a>
       </div>
+      {% endif %}
+      {% if resource2Image or resource2Title %}
       <div class="col-6">
-        <a href="{{ resource2Link }}">
+        <a href="{{ resource2Link | url }}">
           <div class="media p-5 mb-4 rounded shadow">
-            <img src="{{ resource2Image }}" class="mr-3" alt="{{ resource2Title }}">
+            {% if resource2Image %}
+            <img src="{{ resource2Image | url }}" class="mr-3" alt="{{ resource2Title }}">
+            {% endif %}
             <div class="media-body align-self-center">
               {{ resource2Title }}
             </div>
           </div>
         </a>
       </div>
+      {% endif %}
+      {% if resource3Image or resource3Title %}
       <div class="col-6">
-        <a href="{{ resource3Link }}">
+        <a href="{{ resource3Link | url }}">
           <div class="media p-5 mb-4 rounded shadow">
-            <img src="{{ resource3Image }}" class="mr-3" alt="{{ resource3Title }}">
+            {% if resource3Image %}
+            <img src="{{ resource3Image | url }}" class="mr-3" alt="{{ resource3Title }}">
+            {% endif %}
             <div class="media-body align-self-center">
               {{ resource3Title }}
             </div>
           </div>
         </a>
       </div>
+      {% endif %}
+      {% if resource4Image or resource4Title %}
       <div class="col-6">
-        <a href="{{ resource4Link }}">
+        <a href="{{ resource4Link | url }}">
           <div class="media p-5 mb-4 rounded shadow">
-            <img src="{{ resource4Image }}" class="mr-3" alt="{{ resource4Title }}">
+            {% if resource4Image %}
+            <img src="{{ resource4Image | url }}" class="mr-3" alt="{{ resource4Title }}">
+            {% endif %}
             <div class="media-body align-self-center">
               {{ resource4Title }}
             </div>
           </div>
         </a>
       </div>
+      {% endif %}
     </div>
   </div>
 </section>
