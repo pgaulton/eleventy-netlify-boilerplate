@@ -1,6 +1,6 @@
 ---
-title: New Home
-date: '2020-0211T01:03:32.388Z'
+title: Home
+date: 2020-02-13T08:00:00.000Z
 permalink: /
 bannerTitle: >-
   Software, from concept to completion. Provider of industry standard SaaS
@@ -10,7 +10,7 @@ bannerBody: >-
   develops and operates enterprise-grade SaaS software globally. Leverage our
   proven expertise to help build your next cloud-ready application.
 bannerLinkTitle: Let's chat
-bannerLinkUrl: /contactUs
+bannerLinkUrl: /contact.html
 bannerImage: /static/img/mockup3.png
 productsSubtitle: Products built with Navarik technologies
 productsTitle: Flexible & customizable applications for efficient workflow and data sharing
@@ -44,6 +44,8 @@ section1Body: |-
   * Operational efficiencies
   * Reference document storage
   * Catalogue data management
+section1Image1: /static/img/5.png
+section1Image2: /static/img/51.png
 technologiesTitle: Building on modern technologies
 technology1Image: /static/img/auth0_logo.png
 technology1Title: Secure Identity
