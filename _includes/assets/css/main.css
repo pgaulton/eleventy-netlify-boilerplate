@@ -9846,7 +9846,7 @@ h3.subtitle {
   line-height: 1.4;
 }
 
-.section-one {
+.section-products {
   padding-top: 400px;
 }
 
@@ -9956,6 +9956,32 @@ img {
 
 .contact-page-banner {
   height: 700px;
+}
+
+.homepage-section1-images {
+  position: absolute;
+  top: 0;
+  right: 25px;
+}
+
+.homepage-section1-images img {
+  max-width: 550px;
+}
+
+.homepage-section1-images img:nth-child(2) {
+  position: absolute;
+  right: 100px;
+  top: 180px;
+}
+
+.image2 {
+  position: absolute;
+  right: 100px;
+  bottom: -140px;
+}
+
+.homepage-section-one {
+  position: relative;
 }
 
 /*# sourceMappingURL=main.css.map */

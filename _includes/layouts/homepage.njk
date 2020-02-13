@@ -30,7 +30,7 @@ section: homepage
   </div>
 </section>
 
-<section class="section-one">
+<section class="section-products">
   <div class="container pb-5">
     <div class="text-center">
       <h3 class="subtitle">
@@ -142,22 +142,20 @@ section: homepage
   </div>
 </section>
 
-<section>
+<section class="homepage-section-one mt-5">
   <div class="container">
     <div class="row">
-      <div class="col-lg-6  my-5">
-        <h3 class="section-title mb-4">{{ section1Title }}</h3>
+      <div class="col-lg-6 my-5">
+        <h3 class="section-title py-4">{{ section1Title }}</h3>
         {% markdown section1Body %}
       </div>
-      <div class="col-lg-6">
-        <div class="homepage-section1-images">
-          {% if section1Image1 %}
-          <img src="{{ section1Image1 | url }}" class="" alt="todo" />
-          {% endif %}
-          {% if section1Image2 %}
-          <img src="{{ section1Image2 | url }}" class="" alt="todo" />
-          {% endif %}
-        </div>
+      <div class="homepage-section1-images">
+        {% if section1Image1 %}
+        <img src="{{ section1Image1 | url }}" class="" alt="todo" />
+        {% endif %}
+        {% if section1Image2 %}
+        <img src="{{ section1Image2 | url }}" class="" alt="todo" />
+        {% endif %}
       </div>
     </div>
   </div>
