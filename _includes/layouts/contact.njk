@@ -22,41 +22,62 @@ section: contact
   </div>
 </section>
 
-<section class="page-section">
+<section class="py-5">
   <div class="container">
     <div class="row">
       <div class="col-lg-6">
         {% markdown location %}
 
-        <ul class="list-unstyled">
+        <ul class="list-unstyled text-primary">
           {% if telephone1 %}
-          <li>{{ telephone1 }}</li>
+          <li>
+            <i class="fas fa-phone-alt mr-3"></i>
+            {{ telephone1 }}
+          </li>
           {% endif %}
           {% if telephone2 %}
-          <li>{{ telephone2 }}</li>
+          <li>
+            <i class="fas fa-phone-alt mr-3"></i>
+            {{ telephone2 }}
+          </li>
           {% endif %}
         </ul>
       </div>
       <div class="col-lg-6">
         {% if contactTitle %}
-        <h6>{{ contactTitle }}</h6>
+        <h5>{{ contactTitle }}</h5>
         {% endif %}
 
         <ul class="list-unstyled">
           {% if email1 %}
-          <li>{{ email1 }}</li>
+          <li>
+            <i class="far fa-envelope mr-3"></i>
+            <a href="mailto:{{ email1 }}">{{ email1 }}</a>
+          </li>
           {% endif %}
           {% if email2 %}
-          <li>{{ email2 }}</li>
+          <li>
+            <i class="far fa-envelope mr-3"></i>
+            <a href="mailto:{{ email1 }}">{{ email2 }}</a>
+          </li>
           {% endif %}
           {% if website %}
-          <li>{{ website }}</li>
+          <li>
+            <i class="far fa-life-ring mr-3"></i>
+            <a href="{{ website | url }}">Support Portal</a>
+          </li>
           {% endif %}
           {% if twitter %}
-          <li>{{ twitter }}</li>
+          <li>
+            <i class="fab fa-twitter mr-3"></i>
+            <a href="http://twitter.com/{{ twitter }}">@{{ twitter }}</a>
+          </li>
           {% endif %}
           {% if linkedIn %}
-          <li>{{ linkedIn }}</li>
+          <li>
+            <i class="fab fa-linkedin-in mr-3"></i>
+            <a href="{{ 'http://www.' + linkedIn | url }}">{{ linkedIn }}</a>
+          </li>
           {% endif %}
         </ul>
       </div>

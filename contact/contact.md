@@ -16,7 +16,7 @@ contactTitle: Contact Channels
 email1: ' contact@navarik.com        '
 email2: support@navarik.com
 website: 'https://support.navarik.com/'
-twitter: '@navarik'
+twitter: 'navarik'
 linkedIn: linkedin.com/navarik
 ---
 # Get in touch with us
