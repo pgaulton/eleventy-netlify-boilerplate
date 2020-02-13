@@ -19,9 +19,13 @@ section: product
 
 <section class="page-section">
   <div class="container">
+
+    {% if productImage1 or productTitle or layoutContent %}
     <div class="row pb-5">
       <div class="col-lg-5">
+        {% if productImage1 %}
         <img src="{{ productImage1 }}" alt="TODO" />
+        {% endif %}
       </div>
       <div class="col-lg-6">
         <div class="pl-5">
@@ -31,6 +35,7 @@ section: product
         </div>
       </div>
     </div>
+    {% endif %}
 
     <div class="row">
       <div class="col-lg-11">
