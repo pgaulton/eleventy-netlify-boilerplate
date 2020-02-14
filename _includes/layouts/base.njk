@@ -6,18 +6,23 @@
 	<body class="d-flex flex-column">
 
 		<header>
-      <nav id="navbar-main" class="navbar navbar-expand-md navbar-main{% if section == 'homepage' %} navbar-dark{% else %} navbar-light navbar-fixed fixed-top{% endif %}">
+      <nav id="navbar-main" class="navbar navbar-expand-lg navbar-main{% if section == 'homepage' %} navbar-dark{% else %} navbar-light navbar-fixed fixed-top{% endif %}">
         <div class="container">
           <a class="navbar-brand" href="{{ '/' | url }}">
             <img src="/_includes/assets/img/nvrk-logo-white.svg" alt="{{ metadata.title }}" class="main-logo" />
             <img src="/_includes/assets/img/nvrk-logo-blue.svg" alt="{{ metadata.title }}" class="alt-logo" />
           </a>
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+          <button class="navbar-toggler" type="button" data-toggle="navbar" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
-          <div class="collapse navbar-collapse" id="navbarCollapse">
+          <div class="navbar-collapse" id="navbarCollapse">
+            <div class="navbar-close text-right pt-3 pr-3" data-toggle="navbar">
+              <button class="btn btn-link navbar-close-toggle" aria-label="Close">
+                <i class="fas fa-times fa-2x"></i>
+              </button>
+            </div>
 						{% include "components/nav.njk" %}
-            <a class="btn btn-rounded ml-4 btn-light shadow" href="/index.html">Dashboard</a>
+            {# <a class="btn btn-rounded ml-4 btn-light shadow" href="/index.html">Dashboard</a> #}
           </div>
         </div>
       </nav>
@@ -28,6 +33,8 @@
 		</main>
 
 		{% include "components/footer.njk" %}
+
+    {# <div id="modal-backdrop hide" class="modal-backdrop fade"></div> #}
 
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
     <script src="/_includes/assets/js/header.js"></script>

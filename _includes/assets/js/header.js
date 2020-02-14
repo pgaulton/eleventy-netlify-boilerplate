@@ -39,6 +39,27 @@
       }
   });
 
+  $(document).on('click', '[data-toggle="navbar"]', function(e) {
+    e.preventDefault();
+    var $nav = $('.navbar-collapse');
+    $nav.toggleClass('show');
+    if ($nav.hasClass('show')) {
+      var $mask = $('<div class="modal-backdrop fade" data-toggle="navbar"></div>').appendTo('body')
+      setTimeout(function(){
+        $mask.addClass('show');
+      }, 0);
+    } else {
+      $('.modal-backdrop').remove();
+      $('.navbar-collapse .dropdown-menu').removeClass('show');
+    }
+  });
+
+  $(document).on('click', '.navbar-collapse.show .dropdown-toggle', function(e) {
+    e.preventDefault();
+    $(this).parent().find('.dropdown-menu').toggleClass('show');
+  });
+
+
   // function activeSection() {
   //     if ($(".vc_row[id]").length) {
   //         var wintop = $(window).scrollTop();

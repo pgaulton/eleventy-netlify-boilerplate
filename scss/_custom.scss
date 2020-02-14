@@ -9,30 +9,19 @@
 
   .nav-item {
     margin: 0 23px;
-    padding: 36px 0px;
     position: relative;
+    border-bottom: 1px solid red;
+
+    &:first-child {
+      border-top: 1px solid red;
+    }
 
     .nav-link {
       position: relative;
       font-size: 15px;
       font-weight: 500;
 
-      &:after {
-        content: "";
-        position: absolute;
-        bottom: -2px;
-        width: 0;
-        height: 1px;
-        background: $navbar-dark-hover-color;
-        // @todo: use bs transition?
-        -webkit-transition: all .3s ease-in-out;
-        transition: all .3s ease-in-out;
-        left: 0;
-      }
 
-      &:hover:after {
-        width: 100%;
-      }
     }
   }
 
@@ -63,10 +52,6 @@
     position: fixed;
     -webkit-animation: slideY .65s cubic-bezier(.23,1,.32,1) both;
     animation: slideY .65s cubic-bezier(.23,1,.32,1) both;
-
-    .nav-item {
-      padding: 28px 0;
-    }
 
     .navbar-brand img {
       &.main-logo {
@@ -100,6 +85,104 @@
       &:hover {
         color: white;
         background: $colorBlue1;
+      }
+    }
+  }
+
+  .navbar-close {
+    display: none;
+  }
+
+}
+
+@media (min-width: map-get($grid-breakpoints, "lg")) {
+  .dropdown:hover .dropdown-menu {
+    display: block;
+  }
+  
+  .dropdown .dropdown-menu {
+    margin-top: -20px;
+  }
+
+  .navbar-main {
+    .nav-item {
+      padding: 36px 0px;
+      border: 0;
+
+      .nav-link {
+        &:after {
+          content: "";
+          position: absolute;
+          bottom: -2px;
+          width: 0;
+          height: 1px;
+          background: $navbar-dark-hover-color;
+          // @todo: use bs transition?
+          -webkit-transition: all .3s ease-in-out;
+          transition: all .3s ease-in-out;
+          left: 0;
+          border: 0;
+        }
+      
+        &:hover:after {
+          width: 100%;
+        }
+
+        &.dropdown-toggle:after {
+          top: inherit;
+        }
+      }
+
+    }
+
+    &.navbar-fixed .nav-item {
+      padding: 28px 0;
+    }
+  }
+}
+
+.dropdown-toggle {
+  width: 100%;
+  text-align: left;
+
+  &:after {
+    right: 0;
+    position: absolute;
+    top: 0.5rem;
+  }
+}
+
+
+// @todo: mobile first dummy!
+@media (max-width: map-get($grid-breakpoints, "lg")) {
+  .navbar-main {
+    z-index: 1041;
+
+    > .container {
+      justify-content: center;
+      position: relative;
+    }
+
+    .navbar-toggler {
+      position: absolute;
+      left: 0;
+    }
+
+    .navbar-collapse {
+      background: green;
+      position: fixed;
+      left: -100%;
+      top: 0;
+      height: 100vh;
+      width: 320px;
+      transition: all .5s ease-in-out; // @todo: bs transition
+
+      .navbar-close {
+        display: block;
+      }
+
+      &.show {
+        left: 0;
       }
     }
   }
@@ -260,15 +343,6 @@ img {
   }
 }
 
-.dropdown:hover .dropdown-menu {
-  display: block;
-}
-
-.dropdown .dropdown-menu {
-  margin-top: -20px;
-}
-
-
 .animate-element-contact {
   position: relative;
   // z-index: 222;
@@ -321,6 +395,19 @@ img {
       position: absolute;
       right: 100px;
       top: 180px;
+    }
+  }
+}
+
+// @todo: use BPs
+@media (max-width: map-get($grid-breakpoints, "xl")) {
+  .homepage-section1-images img {
+    max-width: 450px;
+
+    &:nth-child(2) {
+      position: absolute;
+      right: 70px;
+      top: 150px;
     }
   }
 }
