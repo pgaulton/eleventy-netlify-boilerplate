@@ -3,7 +3,8 @@ title: Home
 date: 2020-02-13T08:00:00.000Z
 permalink: /
 bannerTitle: >-
-  Software, from concept to completion. Provider of industry standard SaaS
+  Software, from concept to completion. 
+  Provider of industry standard SaaS
   solutions.
 bannerBody: >-
   Trusted by some of the biggest companies in the world, Navarik designs,

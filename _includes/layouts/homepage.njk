@@ -45,7 +45,7 @@ section: homepage
     <div class="row">
       {% if product1Image or product1Title or product1Description or product1LinkUrl %}
       <div class="col-lg-4">
-        <div class="card py-2">
+        <div class="card mb-4">
           <div class="card-body">
             {% if product1Image %}
             <img src="{{ product1Image | url }}" class="pb-5 w-75" alt="{{ product1Title }}" />
@@ -63,7 +63,7 @@ section: homepage
       {% endif %}
       {% if product2Image or product2Title or product2Description or product2LinkUrl %}
       <div class="col-lg-4">
-        <div class="card py-2">
+        <div class="card mb-4">
           <div class="card-body">
             {% if product2Image %}
             <img src="{{ product2Image | url }}" class="pb-5 w-75" alt="{{ product2Title }}" />
@@ -81,7 +81,7 @@ section: homepage
       {% endif %}
       {% if product3Image or product3Title or product3Description or product3LinkUrl %}
       <div class="col-lg-4">
-        <div class="card py-2">
+        <div class="card mb-4">
           <div class="card-body">
             {% if product3Image %}
             <img src="{{ product3Image | url }}" class="pb-5 w-75" alt="{{ product3Title }}" />
@@ -142,14 +142,14 @@ section: homepage
   </div>
 </section>
 
-<section class="homepage-section-one mt-5">
+<section class="homepage-section-one mt-3 mt-md-5">
   <div class="container">
     <div class="row">
-      <div class="col-lg-6 my-5">
-        <h3 class="section-title py-4">{{ section1Title }}</h3>
+      <div class="col-lg-6 mt-md-5 mb-5 mt-lg-0">
+        <h3 class="section-title py-4 pt-lg-0">{{ section1Title }}</h3>
         {% markdown section1Body %}
       </div>
-      <div class="homepage-section1-images">
+      <div class="homepage-section1-images col-lg-6">
         {% if section1Image1 %}
         <img src="{{ section1Image1 | url }}" class="" alt="todo" />
         {% endif %}
@@ -166,7 +166,7 @@ section: homepage
     <div class="text-center my-5">
       <h2>{{ technologiesTitle }}</h2>
     </div>
-    <div class="row mb-5">
+    <div class="row mb-md-5 text-center text-md-left">
       {% if technology1Image or technology1Title or technology1Description %}
       <div class="col-lg-4 col-md-6 mb-5">
         {% if technology1Image %}
@@ -237,14 +237,14 @@ section: homepage
   </div>
 </section>
 
-<section class="section-blue call-to-action">
+<section class="section-blue call-to-action text-center text-lg-left">
   <div class="container">
     <div class="row align-items-center justify-content-between text-white">
-      <div class="col-lg-7">
+      <div class="col-lg-7 pb-4">
         <h2 class="mb-3">{{ section2Title }}</h2>
         {% markdown section2Body %}
       </div>
-      <div class="col-lg-5 text-right">
+      <div class="col-lg-5 text-lg-right">
         {% if section2LinkTitle %}
         <a href="{{ section2LinkUrl | url }}" class="btn btn-rounded btn-lg btn-light shadow">
           {{ section2LinkTitle }}
@@ -264,7 +264,7 @@ section: homepage
 
     <div class="row">
       {% if resource1Image or resource1Title %}
-      <div class="col-6">
+      <div class="col-md-6">
         <a href="{{ resource1Link | url }}">
           <div class="media p-5 mb-4 rounded shadow">
             {% if resource1Image %}
@@ -278,7 +278,7 @@ section: homepage
       </div>
       {% endif %}
       {% if resource2Image or resource2Title %}
-      <div class="col-6">
+      <div class="col-md-6">
         <a href="{{ resource2Link | url }}">
           <div class="media p-5 mb-4 rounded shadow">
             {% if resource2Image %}
@@ -292,7 +292,7 @@ section: homepage
       </div>
       {% endif %}
       {% if resource3Image or resource3Title %}
-      <div class="col-6">
+      <div class="col-md-6">
         <a href="{{ resource3Link | url }}">
           <div class="media p-5 mb-4 rounded shadow">
             {% if resource3Image %}
@@ -306,7 +306,7 @@ section: homepage
       </div>
       {% endif %}
       {% if resource4Image or resource4Title %}
-      <div class="col-6">
+      <div class="col-md-6">
         <a href="{{ resource4Link | url }}">
           <div class="media p-5 mb-4 rounded shadow">
             {% if resource4Image %}
@@ -328,7 +328,7 @@ section: homepage
     <h2>{{ section3Title }}</h2>
 
     <div class="row">
-      <div class="col-8 offset-2">
+      <div class="col-md-8 offset-md-2">
         {% markdown section3Body %}
       </div>
     </div>
