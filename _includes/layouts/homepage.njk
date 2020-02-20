@@ -44,11 +44,15 @@ section: homepage
 
     <div class="row">
       {% if product1Image or product1Title or product1Description or product1LinkUrl %}
-      <div class="col-lg-4">
-        <div class="card mb-4">
+      <div class="col-lg-4 mb-4 mb-lg-0">
+        <div class="card h-100">
           <div class="card-body">
             {% if product1Image %}
-            <img src="{{ product1Image | url }}" class="pb-5 w-75" alt="{{ product1Title }}" />
+            <div class="row">
+              <div class="col-10 col-sm-8 col-md-6 col-lg-12">
+                <img src="{{ product1Image | url }}" class="pb-5 w-75" alt="{{ product1Title }}" />
+              </div>
+            </div>
             {% endif %}
             <h4 class="card-title">{{ product1Title }}</h4>
             <div class="card-text">
@@ -62,11 +66,15 @@ section: homepage
       </div>
       {% endif %}
       {% if product2Image or product2Title or product2Description or product2LinkUrl %}
-      <div class="col-lg-4">
-        <div class="card mb-4">
+      <div class="col-lg-4 mb-4 mb-lg-0">
+        <div class="card h-100">
           <div class="card-body">
             {% if product2Image %}
-            <img src="{{ product2Image | url }}" class="pb-5 w-75" alt="{{ product2Title }}" />
+            <div class="row">
+              <div class="col-10 col-sm-8 col-md-6 col-lg-12">
+                <img src="{{ product2Image | url }}" class="pb-5 w-75" alt="{{ product2Title }}" />
+              </div>
+            </div>
             {% endif %}
             <h4 class="card-title">{{ product2Title }}</h4>
             <div class="card-text">
@@ -80,11 +88,15 @@ section: homepage
       </div>
       {% endif %}
       {% if product3Image or product3Title or product3Description or product3LinkUrl %}
-      <div class="col-lg-4">
-        <div class="card mb-4">
+      <div class="col-lg-4 mb-4 mb-lg-0">
+        <div class="card h-100">
           <div class="card-body">
             {% if product3Image %}
-            <img src="{{ product3Image | url }}" class="pb-5 w-75" alt="{{ product3Title }}" />
+            <div class="row">
+              <div class="col-10 col-sm-8 col-md-6 col-lg-12">
+                <img src="{{ product3Image | url }}" class="pb-5 w-75" alt="{{ product3Title }}" />
+              </div>
+            </div>
             {% endif %}
             <h4 class="card-title">{{ product3Title }}</h4>
             <div class="card-text">

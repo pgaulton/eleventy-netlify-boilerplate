@@ -10101,7 +10101,7 @@ img {
 }
 
 .navbar-main .navbar-collapse {
-  background: green;
+  background: #fff;
   position: fixed;
   left: -100%;
   top: 0;
