@@ -9676,168 +9676,6 @@ a.text-dark:hover, a.text-dark:focus {
   }
 }
 
-.navbar-main {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  -webkit-transition: all .3s ease-in-out;
-  transition: all .3s ease-in-out;
-  padding: 0;
-}
-
-.navbar-main .nav-item {
-  margin: 0 23px;
-  position: relative;
-  border-bottom: 1px solid red;
-}
-
-.navbar-main .nav-item:first-child {
-  border-top: 1px solid red;
-}
-
-.navbar-main .nav-item .nav-link {
-  position: relative;
-  font-size: 15px;
-  font-weight: 500;
-}
-
-.navbar-main.navbar-light .nav-link {
-  color: #333;
-}
-
-.navbar-main.navbar-light .nav-link:hover {
-  color: #004a97;
-}
-
-.navbar-main.navbar-light .btn-outline-primary {
-  color: #004a97;
-  border-color: #004a97;
-}
-
-.navbar-main.navbar-light .btn-outline-primary:hover {
-  color: white;
-  background: #004a97;
-}
-
-.navbar-main.navbar-fixed {
-  position: fixed;
-  -webkit-animation: slideY 0.65s cubic-bezier(0.23, 1, 0.32, 1) both;
-  animation: slideY 0.65s cubic-bezier(0.23, 1, 0.32, 1) both;
-}
-
-.navbar-main.navbar-fixed .navbar-brand img.main-logo {
-  display: none;
-}
-
-.navbar-main.navbar-fixed .navbar-brand img.alt-logo {
-  display: inline;
-}
-
-.navbar-main .navbar-brand {
-  display: block;
-  width: 160px;
-}
-
-.navbar-main .navbar-brand img {
-  width: 100%;
-}
-
-.navbar-main .navbar-brand img.alt-logo {
-  display: none;
-}
-
-.navbar-main .btn {
-  border-color: transparent;
-}
-
-.navbar-main .btn.btn-light {
-  color: #004a97;
-}
-
-.navbar-main .btn.btn-light:hover {
-  color: white;
-  background: #004a97;
-}
-
-.navbar-main .navbar-close {
-  display: none;
-}
-
-@media (min-width: 992px) {
-  .dropdown:hover .dropdown-menu {
-    display: block;
-  }
-  .dropdown .dropdown-menu {
-    margin-top: -20px;
-  }
-  .navbar-main .nav-item {
-    padding: 36px 0px;
-    border: 0;
-  }
-  .navbar-main .nav-item .nav-link:after {
-    content: "";
-    position: absolute;
-    bottom: -2px;
-    width: 0;
-    height: 1px;
-    background: #fff;
-    -webkit-transition: all .3s ease-in-out;
-    transition: all .3s ease-in-out;
-    left: 0;
-    border: 0;
-  }
-  .navbar-main .nav-item .nav-link:hover:after {
-    width: 100%;
-  }
-  .navbar-main .nav-item .nav-link.dropdown-toggle:after {
-    top: inherit;
-  }
-  .navbar-main.navbar-fixed .nav-item {
-    padding: 28px 0;
-  }
-}
-
-.dropdown-toggle {
-  width: 100%;
-  text-align: left;
-}
-
-.dropdown-toggle:after {
-  right: 0;
-  position: absolute;
-  top: 0.5rem;
-}
-
-@media (max-width: 992px) {
-  .navbar-main {
-    z-index: 1041;
-  }
-  .navbar-main > .container {
-    justify-content: center;
-    position: relative;
-  }
-  .navbar-main .navbar-toggler {
-    position: absolute;
-    left: 0;
-  }
-  .navbar-main .navbar-collapse {
-    background: green;
-    position: fixed;
-    left: -100%;
-    top: 0;
-    height: 100vh;
-    width: 320px;
-    transition: all .5s ease-in-out;
-  }
-  .navbar-main .navbar-collapse .navbar-close {
-    display: block;
-  }
-  .navbar-main .navbar-collapse.show {
-    left: 0;
-  }
-}
-
 .banner {
   height: 935px;
 }
@@ -10128,6 +9966,183 @@ img {
   }
   .page-banner h1 {
     font-size: 50px;
+  }
+}
+
+.navbar-main {
+  z-index: 1041;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  -webkit-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+  padding: 0;
+}
+
+.navbar-main .nav-item {
+  margin: 0 23px;
+  position: relative;
+  border-bottom: 1px solid red;
+}
+
+.navbar-main .nav-item:first-child {
+  border-top: 1px solid red;
+}
+
+.navbar-main .nav-item .nav-link {
+  position: relative;
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.navbar-main.navbar-light .nav-link {
+  color: #333;
+}
+
+.navbar-main.navbar-light .nav-link:hover {
+  color: #004a97;
+}
+
+.navbar-main.navbar-light .btn-outline-primary {
+  color: #004a97;
+  border-color: #004a97;
+}
+
+.navbar-main.navbar-light .btn-outline-primary:hover {
+  color: white;
+  background: #004a97;
+}
+
+.navbar-main.navbar-fixed {
+  position: fixed;
+  -webkit-animation: slideY 0.65s cubic-bezier(0.23, 1, 0.32, 1) both;
+  animation: slideY 0.65s cubic-bezier(0.23, 1, 0.32, 1) both;
+}
+
+.navbar-main.navbar-fixed .navbar-brand img.main-logo {
+  display: none;
+}
+
+.navbar-main.navbar-fixed .navbar-brand img.alt-logo {
+  display: inline;
+}
+
+.navbar-main .navbar-brand {
+  display: block;
+  width: 160px;
+}
+
+.navbar-main .navbar-brand img {
+  width: 100%;
+}
+
+.navbar-main .navbar-brand img.alt-logo {
+  display: none;
+}
+
+.navbar-main .btn {
+  border-color: transparent;
+}
+
+.navbar-main .btn.btn-light {
+  color: #004a97;
+}
+
+.navbar-main .btn.btn-light:hover {
+  color: white;
+  background: #004a97;
+}
+
+.navbar-main .navbar-close {
+  display: none;
+}
+
+.navbar-main .dropdown-toggle {
+  width: 100%;
+  text-align: left;
+}
+
+.navbar-main .dropdown-toggle:after {
+  right: 0;
+  position: absolute;
+  top: 0.5rem;
+}
+
+.navbar-main > .container {
+  justify-content: center;
+  position: relative;
+}
+
+.navbar-main .navbar-toggler {
+  position: absolute;
+  left: 0;
+  border-color: transparent;
+}
+
+.navbar-main .navbar-collapse {
+  background: green;
+  position: fixed;
+  left: -100%;
+  top: 0;
+  height: 100vh;
+  width: 320px;
+  transition: all .5s ease-in-out;
+}
+
+.navbar-main .navbar-collapse .navbar-close {
+  display: block;
+}
+
+.navbar-main .navbar-collapse.show {
+  left: 0;
+}
+
+@media (min-width: 992px) {
+  .navbar-main .nav-item {
+    padding: 36px 0px;
+    border: 0;
+  }
+  .navbar-main .nav-item .nav-link:after {
+    content: "";
+    position: absolute;
+    bottom: -2px;
+    width: 0;
+    height: 1px;
+    background: #fff;
+    -webkit-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
+    left: 0;
+    border: 0;
+  }
+  .navbar-main .nav-item .nav-link:hover:after {
+    width: 100%;
+  }
+  .navbar-main .nav-item .nav-link.dropdown-toggle:after {
+    top: inherit;
+  }
+  .navbar-main.navbar-fixed .nav-item {
+    padding: 28px 0;
+  }
+  .navbar-main .dropdown:hover .dropdown-menu {
+    display: block;
+  }
+  .navbar-main .dropdown .dropdown-menu {
+    margin-top: -20px;
+  }
+  .navbar-main > .container {
+    justify-content: space-between;
+  }
+  .navbar-main .navbar-collapse {
+    background: none;
+    position: static;
+    height: auto;
+    left: auto;
+    top: auto;
+    width: auto;
+  }
+  .navbar-main .navbar-collapse .navbar-close {
+    display: none;
   }
 }
 
