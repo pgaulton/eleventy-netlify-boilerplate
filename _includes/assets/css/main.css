@@ -1,4 +1,13 @@
 @import url("https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800");
+/*
+$grid-breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px
+) !default;
+*/
 /*!
  * Bootstrap v4.4.1 (https://getbootstrap.com/)
  * Copyright 2011-2019 The Bootstrap Authors
@@ -9968,7 +9977,7 @@ img {
   padding-top: 120px;
 }
 
-.page-section p, .page-section h2 {
+.page-section p, .page-section h2, .page-section ul {
   margin-bottom: 40px;
 }
 
@@ -10081,6 +10090,10 @@ img {
   height: 300px;
 }
 
+.page-banner .container {
+  padding-top: 40px;
+}
+
 .page-banner h1 {
   font-size: 30px;
   font-weight: 800;
@@ -10101,6 +10114,9 @@ img {
   .page-banner {
     height: 400px;
   }
+  .page-banner .container {
+    padding-top: 30px;
+  }
   .page-banner h1 {
     font-size: 50px;
   }
@@ -10109,6 +10125,9 @@ img {
 @media (min-width: 1200px) {
   .page-banner {
     height: 550px;
+  }
+  .page-banner h1 {
+    font-size: 50px;
   }
 }
 

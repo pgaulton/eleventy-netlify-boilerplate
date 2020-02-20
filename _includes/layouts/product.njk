@@ -19,14 +19,14 @@ section: product
   <div class="container">
 
     {% if productImage1 or productTitle or layoutContent %}
-    <div class="row pb-5">
+    <div class="row pb-md-5">
       <div class="col-lg-5">
         {% if productImage1 %}
         <img src="{{ productImage1 }}" alt="TODO" />
         {% endif %}
       </div>
       <div class="col-lg-7">
-        <div class="px-5 pt-4">
+        <div class="px-lg-5 pt-4">
           <h3 class="subtitle">{{ productSubtitle }}</h3>
           <h2 class="mb-5">{{ productTitle }}</h2>
           <div class="text-large">
@@ -37,17 +37,17 @@ section: product
     </div>
     {% endif %}
 
-    <div class="px-5 text-large">
+    <div class="px-lg-5 text-large">
       {% markdown productContent2 %}
     </div>
 
     {% if productImage2 %}
-    <div class="px-5 text-center">
-      <img src="{{ productImage2 }}" alt="TODO" class="py-5" />
+    <div class="px-lg-5 text-center">
+      <img src="{{ productImage2 }}" alt="TODO" class="pb-5" />
     </div>
     {% endif %}
 
-    <div class="px-5">
+    <div class="px-lg-5">
       {% markdown productContent3 %}
     </div>
   </div>
@@ -55,7 +55,7 @@ section: product
 
 <section class="section-blue call-to-action text-center">
   <div class="container">
-    <h2>Interested in a demo?</h2>
+    <h2 class="pb-2">Interested in a demo?</h2>
     <a href="/contact.html" class="btn btn-rounded btn-lg btn-light shadow">
       Get in touch
     </a>
