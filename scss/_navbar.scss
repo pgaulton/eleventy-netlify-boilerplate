@@ -53,14 +53,14 @@
     position: fixed;
     -webkit-animation: slideY .65s cubic-bezier(.23,1,.32,1) both;
     animation: slideY .65s cubic-bezier(.23,1,.32,1) both;
+  }
 
-    .navbar-brand img {
-      &.main-logo {
-        display: none;
-      }
-      &.alt-logo {
-        display: inline;
-      }
+  &.navbar-light  .navbar-brand img {
+    &.main-logo {
+      display: none;
+    }
+    &.alt-logo {
+      display: inline;
     }
   }
 

@@ -145,7 +145,7 @@ img {
 
 
 .page-section {
-  padding-top: 120px;
+  padding-top: 80px;
 
   p, h2, ul {
     margin-bottom: 40px;
@@ -157,7 +157,7 @@ img {
   // z-index: 222;
   height: 465px;
   width: 408px;
-  bottom: -135px;
+  // bottom: -135px;
 
   img {
     position: absolute;
@@ -183,11 +183,6 @@ img {
     }
   }
 }
-
-.contact-page-banner {
-  height: 700px;
-}
-
 
 .homepage-section-one {
   position: relative;
@@ -219,9 +214,6 @@ img {
 
 @media (min-width: map-get($grid-breakpoints, "sm")) {
   h2 {
-    font-size: 36px; // @todo: make this the global h2 size?
-    line-height: 42px;
-
     &.banner-title {
       font-size: 40px;
       line-height: 60px;
@@ -240,12 +232,20 @@ img {
 }
 
 @media (min-width: map-get($grid-breakpoints, "md")) {
-
+  h2 {
+    font-size: 32px; // @todo: make this the global h2 size?
+    line-height: 42px;
+  }
 
 
 }
 
 @media (min-width: map-get($grid-breakpoints, "lg")) {
+  h2 {
+    font-size: 36px; // @todo: make this the global h2 size?
+    line-height: 42px;
+  }
+
   .homepage-section1-images {
     // position: absolute;
     // right: 25px;
@@ -266,6 +266,9 @@ img {
     }
   }
 
+  .page-section {
+    padding-top: 120px;
+  }
 
   .section-products {
     padding-top: 400px;
@@ -303,6 +306,21 @@ img {
     font-size: 30px;
     font-weight: 800;
   }
+
+  &.contact-page-banner {
+    height: auto;
+    // height: 700px;
+
+    h1 {
+      font-weight: 600;
+      // font-size: 32px;
+      // line-height: 54px;
+    }
+
+    .container {
+      padding-top: 110px;
+    }
+  }
 }
 
 .text-large p {
@@ -326,6 +344,12 @@ img {
 
     h1 {
       font-size: 50px;
+    }
+
+    &.contact-page-banner {
+      h1 {
+        font-size: 40px;
+      }
     }
   }
 }

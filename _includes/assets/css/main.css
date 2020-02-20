@@ -9812,7 +9812,7 @@ img {
 }
 
 .page-section {
-  padding-top: 120px;
+  padding-top: 80px;
 }
 
 .page-section p, .page-section h2, .page-section ul {
@@ -9823,7 +9823,6 @@ img {
   position: relative;
   height: 465px;
   width: 408px;
-  bottom: -135px;
 }
 
 .animate-element-contact img {
@@ -9850,10 +9849,6 @@ img {
   left: 110px;
 }
 
-.contact-page-banner {
-  height: 700px;
-}
-
 .homepage-section-one {
   position: relative;
   padding-bottom: 140px;
@@ -9877,10 +9872,6 @@ img {
 }
 
 @media (min-width: 576px) {
-  h2 {
-    font-size: 36px;
-    line-height: 42px;
-  }
   h2.banner-title {
     font-size: 40px;
     line-height: 60px;
@@ -9894,7 +9885,18 @@ img {
   }
 }
 
+@media (min-width: 768px) {
+  h2 {
+    font-size: 32px;
+    line-height: 42px;
+  }
+}
+
 @media (min-width: 992px) {
+  h2 {
+    font-size: 36px;
+    line-height: 42px;
+  }
   .homepage-section1-images img {
     max-width: 450px;
   }
@@ -9906,6 +9908,9 @@ img {
     right: 40px;
     left: auto;
     top: 150px;
+  }
+  .page-section {
+    padding-top: 120px;
   }
   .section-products {
     padding-top: 400px;
@@ -9937,6 +9942,18 @@ img {
   font-weight: 800;
 }
 
+.page-banner.contact-page-banner {
+  height: auto;
+}
+
+.page-banner.contact-page-banner h1 {
+  font-weight: 600;
+}
+
+.page-banner.contact-page-banner .container {
+  padding-top: 110px;
+}
+
 .text-large p {
   font-size: 18px;
   line-height: 34px;
@@ -9957,6 +9974,9 @@ img {
   }
   .page-banner h1 {
     font-size: 50px;
+  }
+  .page-banner.contact-page-banner h1 {
+    font-size: 40px;
   }
 }
 
@@ -10020,11 +10040,11 @@ img {
   animation: slideY 0.65s cubic-bezier(0.23, 1, 0.32, 1) both;
 }
 
-.navbar-main.navbar-fixed .navbar-brand img.main-logo {
+.navbar-main.navbar-light .navbar-brand img.main-logo {
   display: none;
 }
 
-.navbar-main.navbar-fixed .navbar-brand img.alt-logo {
+.navbar-main.navbar-light .navbar-brand img.alt-logo {
   display: inline;
 }
 

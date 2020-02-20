@@ -21,6 +21,5 @@ linkedIn: linkedin.com/navarik
 ---
 # Get in touch with us
 
-Do you have any questions we can help with?
-Reach out through any of the available
-means as we'd love to hear from you.
+Do you have any questions we can help with? 
+Reach out through any of the available means as we'd love to hear from you.

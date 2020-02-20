@@ -4,7 +4,7 @@
   var currentSection = $('html').data('current');
 
   var $header = $('#navbar-main'),
-      headerInitial = currentSection === 'homepage' ? 'navbar-dark' : 'navbar-light navbar-fixed fixed-top',
+      headerInitial = currentSection === 'homepage' ? 'navbar-dark' : 'navbar-light',
       headerAlt = 'navbar-light bg-light navbar-fixed fixed-top shadow';
 
   var $headerBtn = $header.find('.btn-rounded'),
