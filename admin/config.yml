@@ -20,6 +20,23 @@ collections:
       - { label: "Summary", name: "summary", widget: "text" }
       - { label: "Tags", name: "tags", widget: "list", default: ["post"] }
       - { label: "Body", name: "body", widget: "markdown" }
+  - name: "blog-collections"
+    label: "Blog collection"
+    folder: "blog-collections"
+    create: false
+    slug: "{{slug}}"
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Publish Date", name: "date", widget: "datetime" }
+      - { label: "Permalink", name: "permalink", widget: "string" }
+      - label: "Navigation"
+        name: "eleventyNavigation"
+        widget: "object"
+        fields:
+          - { label: "Key", name: "key", widget: "string" }
+          - { label: "Order", name: "order", widget: "number", default: 0 }
+          - { label: "Parent Key", name: "parent", widget: "hidden", default: "Blog" }
+          - { label: "Tag", name: "tag", widget: "string" }
   - name: "pages"
     label: "Page"
     folder: "pages"
@@ -40,7 +57,7 @@ collections:
       - { label: "Image", name: "pageImage", widget: "image", required: false }
       - { label: "Content 2", name: "pageContent2", widget: "markdown", required: false }
   - name: "products"
-    label: "Products"
+    label: "Product"
     folder: "products"
     create: true
     slug: "{{slug}}"

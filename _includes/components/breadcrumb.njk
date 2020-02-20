@@ -1,0 +1,14 @@
+{% set breadcrumbItems = collections.all | eleventyNavigationBreadcrumb(eleventyNavigation.key) %}
+<nav aria-label="breadcrumb">
+  <ol class="breadcrumb justify-content-center">
+    <li class="breadcrumb-item"><a href="/">Home</a></li>
+    {%- for crumb in breadcrumbItems %}
+    <li class="breadcrumb-item">
+      <a href="{{ crumb.url | url }}">
+        {{ crumb.key | url }}
+      </a>
+    </li>
+    {%- endfor %}
+    <li class="breadcrumb-item active" aria-current="page">{{ eleventyNavigation.key }}</li>
+  </ol>
+</nav>
