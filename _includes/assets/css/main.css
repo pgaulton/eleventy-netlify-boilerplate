@@ -9964,11 +9964,6 @@ img {
   color: #004a97;
 }
 
-.page-banner {
-  background: #ccffcc;
-  height: 550px;
-}
-
 .page-section {
   padding-top: 120px;
 }
@@ -10078,6 +10073,42 @@ img {
     position: absolute;
     right: 100px;
     top: 180px;
+  }
+}
+
+.page-banner {
+  background: #ccffcc;
+  height: 300px;
+}
+
+.page-banner h1 {
+  font-size: 30px;
+  font-weight: 800;
+}
+
+.text-large p {
+  font-size: 18px;
+  line-height: 34px;
+}
+
+@media (min-width: 768px) {
+  .page-banner h1 {
+    font-size: 40px;
+  }
+}
+
+@media (min-width: 992px) {
+  .page-banner {
+    height: 400px;
+  }
+  .page-banner h1 {
+    font-size: 50px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .page-banner {
+    height: 550px;
   }
 }
 

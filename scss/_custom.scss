@@ -332,11 +332,7 @@ img {
   }
 }
 
-.page-banner {
-  // @todo: remove
-  background: #ccffcc;
-  height: 550px;
-}
+
 
 .page-section {
   padding-top: 120px;
@@ -480,3 +476,44 @@ img {
 
 
 
+
+
+
+
+.page-banner {
+  // @todo: remove
+  background: #ccffcc;
+  height: 300px;
+
+  h1 {
+    font-size: 30px;
+    font-weight: 800;
+  }
+}
+
+.text-large p {
+  font-size: 18px;
+  line-height: 34px;
+}
+
+@media (min-width: map-get($grid-breakpoints, "md")) {
+  .page-banner h1 {
+    font-size: 40px;
+  }
+}
+
+@media (min-width: map-get($grid-breakpoints, "lg")) {
+  .page-banner {
+    height: 400px;
+
+    h1 {
+      font-size: 50px;
+    }
+  }
+}
+
+@media (min-width: map-get($grid-breakpoints, "xl")) {
+  .page-banner {
+    height: 550px;
+  }
+}
