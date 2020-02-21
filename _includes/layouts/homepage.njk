@@ -126,7 +126,6 @@ section: homepage
   <div class="container pb-5 wow fadeInUp">
     <h5 class="my-5 text-center">{{ companiesTitle }}</h5>
 
-    <!-- @todo: replace swiper -->
     <div class="swiper-container" id="logo-carousel" data-perpage="6" data-breakpoints='{"1024": {"slidesPerView": 4}, "768": {"slidesPerView": 4}, "620": {"slidesPerView": 3}}'>
       <div class="swiper-wrapper">
         <div class="swiper-slide">
@@ -172,10 +171,10 @@ section: homepage
         </div>
         <div class="homepage-section1-images col-lg-6 wow fadeInUp">
           {% if section1Image1 %}
-          <img src="{{ section1Image1 | url }}" class="" alt="todo" data-parallax='{"y" : 20}' />
+          <img src="{{ section1Image1 | url }}" alt="UI Screenshot" data-parallax='{"y" : 20}' />
           {% endif %}
           {% if section1Image2 %}
-          <img src="{{ section1Image2 | url }}" class="" alt="todo" data-parallax='{"y" : -20}' />
+          <img src="{{ section1Image2 | url }}" alt="UI Screenshot" data-parallax='{"y" : -20}' />
           {% endif %}
         </div>
       </div>

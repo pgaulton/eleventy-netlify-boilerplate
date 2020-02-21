@@ -6,16 +6,18 @@ section: post
 
 <article class="page-section">
   <div class="container">
-    <p>
+    <p class="wow fadeInUp">
       <small>
         <time datetime="{{ date | machineDate }}">{{ date | readableDate }}</time> by {{ metadata.author.name }}
       </small>
     </p>
 
-    {{ layoutContent | safe }}
+    <div class="wow fadeInUp">
+      {{ layoutContent | safe }}
+    </div>
 
     {% if tags %}
-      <p>
+      <p class="wow fadeInUp">
       {% for tag in tags %}
         {%- if tag != "post" -%}
           {% set tagUrl %}/tags/{{ tag }}/{% endset %}
