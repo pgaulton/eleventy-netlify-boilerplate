@@ -13,6 +13,11 @@
       {% endif %}
     </li>
     {%- endfor %}
-    <li class="breadcrumb-item active" aria-current="page">{{ eleventyNavigation.key }}</li>
+    {% if tags %}
+    <li class="breadcrumb-item">
+      Blog
+    </li>
+    {% endif %}
+    <li class="breadcrumb-item active" aria-current="page">{{ eleventyNavigation.key or title }}</li>
   </ol>
 </nav>

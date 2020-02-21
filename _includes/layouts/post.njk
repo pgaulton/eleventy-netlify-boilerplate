@@ -2,31 +2,32 @@
 layout: layouts/base.njk
 section: post
 ---
+<section class="page-banner d-flex align-items-center text-center">
+  <div class="container wow fadeInUp">
+    <h1>{{ title }}</h1>
+    {% include "components/breadcrumb.njk" %}
+  </div>
+</section>
 
-<article>
-  <h1>{{ title }}</h1>
-  <hr />
-  <p>
-    <small>
-      <time datetime="{{ date | machineDate }}">{{ date | readableDate }}</time> by {{ metadata.author.name }}
-    </small>
-  </p>
-
-  {{ layoutContent | safe }}
-
-  {% if tags %}
+<article class="page-section">
+  <div class="container">
     <p>
-    {% for tag in tags %}
-      {%- if tag != "post" -%}
-        {% set tagUrl %}/tags/{{ tag }}/{% endset %}
-        <a href="{{ tagUrl | url }}" rel="tag">{{ tag }}</a>
-      {%- endif -%}
-    {% endfor %}
+      <small>
+        <time datetime="{{ date | machineDate }}">{{ date | readableDate }}</time> by {{ metadata.author.name }}
+      </small>
     </p>
-  {% endif %}
 
+    {{ layoutContent | safe }}
+
+    {% if tags %}
+      <p>
+      {% for tag in tags %}
+        {%- if tag != "post" -%}
+          {% set tagUrl %}/tags/{{ tag }}/{% endset %}
+          <a class="badge badge-info" href="{{ tagUrl | url }}" rel="tag">{{ tag }}</a>
+        {%- endif -%}
+      {% endfor %}
+      </p>
+    {% endif %}
+  </div>
 </article>
-
-<nav>
-  <a href="{{ '/blog/' | url }}">← Blog index</a>
-</nav>

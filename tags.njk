@@ -13,12 +13,20 @@ layout: layouts/base.njk
 renderData:
   title: "Tagged “{{ tag }}”"
 ---
+{% set title = 'Tagged “' + tag + '”' %}
+{% set tags = true %}
+<section class="page-banner d-flex align-items-center text-center">
+  <div class="container wow fadeInUp">
+    <h1>Tagged: "{{ tag }}"</h1>
+    {% include "components/breadcrumb.njk" %}
+  </div>
+</section>
 
-<h1>Tagged “{{ tag }}”</h1>
+<section class="page-section">
+  <div class="container">
+    {{ layoutContent | safe }}
 
-{% set postslist = collections[ tag ] %}
-{% include "components/postslist.njk" %}
-
-<nav>
-  <a href="{{ '/blog/' | url }}">← Blog index</a>
-</nav>
+    {% set postslist = collections[tag] %}
+    {% include "components/postslist.njk" %}
+  </div>
+</section>

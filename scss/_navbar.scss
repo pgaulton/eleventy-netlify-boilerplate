@@ -21,8 +21,7 @@
       position: relative;
       font-size: 15px;
       font-weight: 500;
-
-
+      color: $colorDark1;
     }
   }
 
@@ -137,11 +136,16 @@
 
 @media (min-width: map-get($grid-breakpoints, "lg")) {
   .navbar-main {
+    &.navbar-dark .nav-item .nav-link {
+      color: $white;
+    }
+
     .nav-item {
       padding: 36px 0px;
       border: 0;
 
       .nav-link {
+        
         &:after {
           content: "";
           position: absolute;

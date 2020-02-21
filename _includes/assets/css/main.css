@@ -10015,6 +10015,7 @@ img {
   position: relative;
   font-size: 15px;
   font-weight: 500;
+  color: #333;
 }
 
 .navbar-main.navbar-light .nav-link {
@@ -10120,6 +10121,9 @@ img {
 }
 
 @media (min-width: 992px) {
+  .navbar-main.navbar-dark .nav-item .nav-link {
+    color: #fff;
+  }
   .navbar-main .nav-item {
     padding: 36px 0px;
     border: 0;
