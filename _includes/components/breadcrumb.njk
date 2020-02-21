@@ -4,9 +4,13 @@
     <li class="breadcrumb-item"><a href="/">Home</a></li>
     {%- for crumb in breadcrumbItems %}
     <li class="breadcrumb-item">
+      {% if crumb.hidden %}
+      {{ crumb.key }}
+      {% else %}
       <a href="{{ crumb.url | url }}">
-        {{ crumb.key | url }}
+        {{ crumb.key }}
       </a>
+      {% endif %}
     </li>
     {%- endfor %}
     <li class="breadcrumb-item active" aria-current="page">{{ eleventyNavigation.key }}</li>

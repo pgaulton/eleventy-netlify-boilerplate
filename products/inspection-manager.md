@@ -1,7 +1,7 @@
 ---
 title: Inspection Manager
 date: 2020-02-12T23:58:26.968Z
-permalink: /products/navarik-im.html
+permalink: /products/navarik-im/index.html
 eleventyNavigation:
   key: Navarik IM
   order: 1

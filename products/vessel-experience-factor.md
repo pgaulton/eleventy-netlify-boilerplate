@@ -1,7 +1,7 @@
 ---
 title: Vessel Experience Factor
 date: 2020-02-13T00:06:47.986Z
-permalink: /products/navarik-vef.html
+permalink: /products/navarik-vef/index.html
 eleventyNavigation:
   key: Navarik VEF
   order: 2

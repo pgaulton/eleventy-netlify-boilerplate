@@ -1,7 +1,7 @@
 ---
 title: About Us
 date: 2016-01-01T00:00:00.000Z
-permalink: /company/about.html
+permalink: /company/about/index.html
 eleventyNavigation:
   key: About Navarik
   order: 0

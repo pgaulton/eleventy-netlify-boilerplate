@@ -3,7 +3,7 @@ layout: layouts/base.njk
 section: page
 ---
 <section class="page-banner d-flex align-items-center text-center">
-  <div class="container">
+  <div class="container wow fadeInUp">
     <h1>{{ title }}</h1>
     {% include "components/breadcrumb.njk" %}
   </div>
@@ -12,16 +12,16 @@ section: page
 <section class="page-section">
   <div class="container">
     <div class="row">
-      <div class="col-lg-7">
+      <div class="col-lg-7 wow fadeInUp">
         {{ layoutContent | safe }}
       </div>
-      <div class="col-lg-4 offset-lg-1 pb-5 pb-lg-0 text-center">
+      <div class="col-lg-4 offset-lg-1 pb-5 pb-lg-0 text-center wow fadeInRight">
         <img src="{{ pageImage }}" alt="TODO" />
       </div>
     </div>
 
     <div class="row">
-      <div class="col-lg-11">
+      <div class="col-lg-11 wow fadeInUp">
         {% markdown pageContent2 %}
       </div>
     </div>

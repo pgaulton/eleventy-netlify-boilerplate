@@ -1,7 +1,7 @@
 ---
 title: Navarik Inspection
 date: 2020-02-12T22:25:52.379Z
-permalink: products/navarik-ni.html
+permalink: products/navarik-ni/index.html
 eleventyNavigation:
   key: Navarik NI
   order: 0

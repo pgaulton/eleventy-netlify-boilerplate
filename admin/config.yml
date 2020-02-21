@@ -53,6 +53,7 @@ collections:
           - { label: "Key", name: "key", widget: "string" }
           - { label: "Order", name: "order", widget: "number", default: 0 }
           - { label: "Parent Key", name: "parent", widget: "string", required: false }
+          - { label: "Hidden Page", name: "hidden", widget: "boolean", default: false }
       - { label: "Content 1", name: "body", widget: "markdown" }
       - { label: "Image", name: "pageImage", widget: "image", required: false }
       - { label: "Content 2", name: "pageContent2", widget: "markdown", required: false }

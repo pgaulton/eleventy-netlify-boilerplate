@@ -6,10 +6,10 @@ section: contact
   <div class="container h-100">
     <div class="h-100">
       <div class="row h-100">
-        <div class="col-lg-6 d-flex flex-column justify-content-center">
+        <div class="col-lg-6 d-flex flex-column justify-content-center wow fadeInUp">
           {{ layoutContent | safe }}
         </div>
-        <div class="col-lg-6">
+        <div class="col-lg-6 wow fadeInRight">
           <div class="animate-element-contact mx-auto my-5">
             <img src="/_includes/assets/img/animated/001.png" alt="" class="" />
             <img src="/_includes/assets/img/animated/002.png" alt="" class="" />
@@ -25,7 +25,7 @@ section: contact
 <section class="py-5">
   <div class="container">
     <div class="row">
-      <div class="col-md-6 pb-5 pb-md-0">
+      <div class="col-md-6 pb-5 pb-md-0 wow fadeInUp">
         {% markdown location %}
 
         <ul class="list-unstyled text-primary">
@@ -43,7 +43,7 @@ section: contact
           {% endif %}
         </ul>
       </div>
-      <div class="col-md-6">
+      <div class="col-md-6 wow fadeInUp">
         {% if contactTitle %}
         <h5>{{ contactTitle }}</h5>
         {% endif %}

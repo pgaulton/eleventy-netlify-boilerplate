@@ -5,5 +5,6 @@ permalink: /company/index.html
 eleventyNavigation:
   key: Company
   order: 3
+  hidden: true
 ---
 Company

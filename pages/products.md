@@ -5,5 +5,6 @@ permalink: /products/index.html
 eleventyNavigation:
   key: Products
   order: 0
+  hidden: true
 ---
-# Products!
+# Products
