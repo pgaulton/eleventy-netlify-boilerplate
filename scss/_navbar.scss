@@ -11,10 +11,10 @@
   .nav-item {
     margin: 0 23px;
     position: relative;
-    border-bottom: 1px solid red;
+    border-bottom: 1px solid $gray-200;
 
     &:first-child {
-      border-top: 1px solid red;
+      border-top: 1px solid $gray-200;
     }
 
     .nav-link {
@@ -22,6 +22,12 @@
       font-size: 15px;
       font-weight: 500;
       color: $colorDark1;
+      padding-top: .5rem;
+      padding-bottom: .5rem;
+
+      @include hover-focus() {
+        color: $colorBlue1;
+      }
     }
   }
 
@@ -29,7 +35,7 @@
     .nav-link {
       color: $colorDark1;
 
-      &:hover {
+      @include hover-focus() {
         color: $colorBlue1;
       }
     }
@@ -132,6 +138,16 @@
       left: 0;
     }
   }
+
+  .dropdown-menu {
+    border: 0;
+    margin: 0;
+    padding: 0;
+
+    .dropdown-item {
+      border-top: 1px solid $gray-200;
+    }
+  }
 }
 
 @media (min-width: map-get($grid-breakpoints, "lg")) {
@@ -145,7 +161,9 @@
       border: 0 !important;
 
       .nav-link {
-        
+        padding-top: 0;
+        padding-bottom: 0;
+          
         &:after {
           content: "";
           position: absolute;
@@ -197,6 +215,16 @@
 
       .navbar-close {
         display: none;
+      }
+    }
+
+    .dropdown-menu {
+      border: $dropdown-border-width solid $dropdown-border-color;
+      margin: $dropdown-spacer 0 0;
+      padding: $dropdown-padding-y 0;
+  
+      .dropdown-item {
+        border-top: 0;
       }
     }
   }

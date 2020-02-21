@@ -10219,11 +10219,11 @@ svg {
 .navbar-main .nav-item {
   margin: 0 23px;
   position: relative;
-  border-bottom: 1px solid red;
+  border-bottom: 1px solid #e9ecef;
 }
 
 .navbar-main .nav-item:first-child {
-  border-top: 1px solid red;
+  border-top: 1px solid #e9ecef;
 }
 
 .navbar-main .nav-item .nav-link {
@@ -10231,13 +10231,19 @@ svg {
   font-size: 15px;
   font-weight: 500;
   color: #333;
+  padding-top: .5rem;
+  padding-bottom: .5rem;
+}
+
+.navbar-main .nav-item .nav-link:hover, .navbar-main .nav-item .nav-link:focus {
+  color: #004a97;
 }
 
 .navbar-main.navbar-light .nav-link {
   color: #333;
 }
 
-.navbar-main.navbar-light .nav-link:hover {
+.navbar-main.navbar-light .nav-link:hover, .navbar-main.navbar-light .nav-link:focus {
   color: #004a97;
 }
 
@@ -10335,6 +10341,16 @@ svg {
   left: 0;
 }
 
+.navbar-main .dropdown-menu {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar-main .dropdown-menu .dropdown-item {
+  border-top: 1px solid #e9ecef;
+}
+
 @media (min-width: 992px) {
   .navbar-main.navbar-dark .nav-item .nav-link {
     color: #fff;
@@ -10342,6 +10358,10 @@ svg {
   .navbar-main .nav-item {
     padding: 36px 0px;
     border: 0 !important;
+  }
+  .navbar-main .nav-item .nav-link {
+    padding-top: 0;
+    padding-bottom: 0;
   }
   .navbar-main .nav-item .nav-link:after {
     content: "";
@@ -10383,6 +10403,14 @@ svg {
   }
   .navbar-main .navbar-collapse .navbar-close {
     display: none;
+  }
+  .navbar-main .dropdown-menu {
+    border: 1px solid rgba(0, 0, 0, 0.15);
+    margin: 0.125rem 0 0;
+    padding: 0.5rem 0;
+  }
+  .navbar-main .dropdown-menu .dropdown-item {
+    border-top: 0;
   }
 }
 
