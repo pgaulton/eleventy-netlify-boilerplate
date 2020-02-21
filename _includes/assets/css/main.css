@@ -9719,6 +9719,11 @@ a.text-dark:hover, a.text-dark:focus {
   margin-bottom: 50px;
 }
 
+.banner .container {
+  position: relative;
+  z-index: 2;
+}
+
 .section-blue {
   background-image: -webkit-linear-gradient(350deg, #004c97, #0080ff);
   background-image: linear-gradient(100deg, #004c97, #0080ff);
@@ -9977,6 +9982,7 @@ img {
 
 .page-banner .container {
   padding-top: 40px;
+  z-index: 2;
 }
 
 .page-banner h1 {

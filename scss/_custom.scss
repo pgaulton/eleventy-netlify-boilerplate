@@ -13,6 +13,11 @@
     padding-top: 130px;
     margin-bottom: 50px;
   }
+
+  .container {
+    position: relative;
+    z-index: 2;
+  }
 }
 
 .section-blue {
@@ -313,6 +318,7 @@ img {
 
   .container {
     padding-top: 40px;
+    z-index: 2;
   }
 
   h1 {
@@ -361,7 +367,7 @@ img {
 
     &.contact-page-banner {
       height: 700px;
-      
+
       h1 {
         font-size: 40px;
       }
