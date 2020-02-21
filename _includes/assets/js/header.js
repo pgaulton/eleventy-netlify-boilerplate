@@ -5,7 +5,7 @@
 
   var $header = $('#navbar-main'),
       headerInitial = currentSection === 'homepage' ? 'navbar-dark' : 'navbar-light',
-      headerAlt = 'navbar-light bg-light navbar-fixed fixed-top shadow';
+      headerAlt = 'navbar-light bg-white navbar-fixed fixed-top shadow';
 
   var $headerBtn = $header.find('.btn-rounded'),
       headerBtnInitial = 'btn-light shadow',

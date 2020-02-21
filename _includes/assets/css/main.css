@@ -9680,6 +9680,28 @@ a.text-dark:hover, a.text-dark:focus {
   }
 }
 
+@-webkit-keyframes balls {
+  0% {
+    -webkit-transform: scale(0.9);
+    transform: scale(0.9);
+  }
+  to {
+    -webkit-transform: scale(1.5);
+    transform: scale(1.5);
+  }
+}
+
+@keyframes balls {
+  0% {
+    -webkit-transform: scale(0.9);
+    transform: scale(0.9);
+  }
+  to {
+    -webkit-transform: scale(1.5);
+    transform: scale(1.5);
+  }
+}
+
 .banner {
   height: 935px;
   position: relative;
@@ -9833,6 +9855,7 @@ img {
 
 .animate-element-contact {
   position: relative;
+  z-index: 222;
   height: 465px;
   width: 408px;
 }
@@ -9946,8 +9969,10 @@ img {
 }
 
 .page-banner {
-  background: #ccffcc;
+  background: #f9fafc;
   height: 300px;
+  position: relative;
+  overflow: hidden;
 }
 
 .page-banner .container {
@@ -9960,7 +9985,7 @@ img {
 }
 
 .page-banner.contact-page-banner {
-  height: auto;
+  height: 800px;
 }
 
 .page-banner.contact-page-banner h1 {
@@ -9991,6 +10016,9 @@ img {
   }
   .page-banner h1 {
     font-size: 50px;
+  }
+  .page-banner.contact-page-banner {
+    height: 700px;
   }
   .page-banner.contact-page-banner h1 {
     font-size: 40px;
@@ -10036,7 +10064,6 @@ img {
 
 .featured-resources .media {
   position: relative;
-  background: #fff;
   z-index: 2;
 }
 
@@ -10076,6 +10103,100 @@ img {
   .genera-informes-three .shape-bg {
     width: auto;
   }
+}
+
+.page-banner .circle {
+  position: absolute;
+  top: -51%;
+  left: -15%;
+  z-index: 1;
+}
+
+.page-banner.contact-page-banner .circle {
+  top: -40%;
+  left: -17%;
+}
+
+svg {
+  display: block;
+}
+
+.animate-ball {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  top: 0;
+  left: 0;
+}
+
+.animate-ball .ball {
+  background: #fdf1f1;
+  border-radius: 50%;
+  position: absolute;
+}
+
+.animate-ball .ball:first-child {
+  height: 50px;
+  width: 50px;
+  top: 37%;
+  left: 10%;
+  -webkit-animation: balls 1.5s infinite alternate;
+  animation: balls 1.5s infinite alternate;
+}
+
+.animate-ball .ball:nth-child(2) {
+  height: 70px;
+  width: 70px;
+  bottom: 22%;
+  right: 8%;
+  -webkit-animation: d 4s infinite alternate;
+  animation: d 4s infinite alternate;
+}
+
+.animate-ball .ball:nth-child(3) {
+  height: 100px;
+  width: 100px;
+  bottom: 43%;
+  right: 22%;
+  -webkit-animation: c 1.5s infinite alternate;
+  animation: c 1.5s infinite alternate;
+}
+
+.animate-ball .ball:nth-child(4) {
+  height: 40px;
+  width: 40px;
+  bottom: 20%;
+  right: 32%;
+  -webkit-animation: e 1.5s infinite alternate;
+  animation: e 1.5s infinite alternate;
+}
+
+.animate-ball .ball:nth-child(5) {
+  height: 500px;
+  width: 500px;
+  top: -75%;
+  right: 100px;
+  -webkit-animation: f 3s .1s infinite linear;
+  animation: f 3s .1s infinite linear;
+}
+
+.contact-page-banner .animate-ball .ball:nth-child(3) {
+  bottom: 55%;
+  right: 40%;
+  height: 70px;
+  width: 70px;
+}
+
+.contact-page-banner .animate-ball .ball:nth-child(4) {
+  bottom: 28%;
+  right: 40%;
+}
+
+.contact-page-banner .animate-ball .ball:nth-child(5) {
+  top: -60%;
 }
 
 .navbar-main {

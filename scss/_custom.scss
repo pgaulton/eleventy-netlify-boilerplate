@@ -162,7 +162,7 @@ img {
 
 .animate-element-contact {
   position: relative;
-  // z-index: 222;
+  z-index: 222;
   height: 465px;
   width: 408px;
   // bottom: -135px;
@@ -306,9 +306,10 @@ img {
 
 
 .page-banner {
-  // @todo: remove
-  background: #ccffcc;
+  background: #f9fafc;
   height: 300px;
+  position: relative;
+  overflow: hidden;
 
   .container {
     padding-top: 40px;
@@ -320,8 +321,8 @@ img {
   }
 
   &.contact-page-banner {
-    height: auto;
-    // height: 700px;
+    // height: auto;
+    height: 800px;
 
     h1 {
       font-weight: 600;
@@ -359,6 +360,8 @@ img {
     }
 
     &.contact-page-banner {
+      height: 700px;
+      
       h1 {
         font-size: 40px;
       }
@@ -451,5 +454,107 @@ img {
 @media (min-width: map-get($grid-breakpoints, "xl")) {
   .genera-informes-three .shape-bg {
     width: auto;
+  }
+}
+
+
+
+.page-banner {
+  .circle {
+    position: absolute;
+    top: -51%;
+    left: -15%;
+    z-index: 1;
+  }
+
+  &.contact-page-banner .circle {
+    top: -40%;
+    left: -17%
+  }
+}
+
+svg {
+  display: block;
+}
+
+.animate-ball {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  top: 0;
+  left: 0;
+
+  .ball {
+    background: #fdf1f1;
+    border-radius: 50%;
+    position: absolute;
+
+    &:first-child {
+      height: 50px;
+      width: 50px;
+      top: 37%;
+      left: 10%;
+      -webkit-animation: balls 1.5s infinite alternate;
+      animation: balls 1.5s infinite alternate;
+    }
+
+    &:nth-child(2) {
+      height: 70px;
+      width: 70px;
+      bottom: 22%;
+      right: 8%;
+      -webkit-animation: d 4s infinite alternate;
+      animation: d 4s infinite alternate
+    }
+    
+    &:nth-child(3) {
+      height: 100px;
+      width: 100px;
+      bottom: 43%;
+      right: 22%;
+      -webkit-animation: c 1.5s infinite alternate;
+      animation: c 1.5s infinite alternate
+    }
+    
+    &:nth-child(4) {
+      height: 40px;
+      width: 40px;
+      bottom: 20%;
+      right: 32%;
+      -webkit-animation: e 1.5s infinite alternate;
+      animation: e 1.5s infinite alternate
+    }
+    
+    &:nth-child(5) {
+      height: 500px;
+      width: 500px;
+      top: -75%;
+      right: 100px;
+      -webkit-animation: f 3s .1s infinite linear;
+      animation: f 3s .1s infinite linear
+    }
+  }
+}
+
+.contact-page-banner {
+  .animate-ball .ball {
+    &:nth-child(3) {
+      bottom: 55%;
+      right: 40%;
+      height: 70px;
+      width: 70px
+    }
+  
+    &:nth-child(4) {
+      bottom: 28%;
+      right: 40%
+    }
+    
+    &:nth-child(5) {
+      top: -60%
+    }
   }
 }
