@@ -9682,6 +9682,7 @@ a.text-dark:hover, a.text-dark:focus {
 
 .banner {
   height: 935px;
+  position: relative;
 }
 
 .banner p {
@@ -9773,6 +9774,13 @@ img {
 
 .call-to-action {
   padding: 5em 0;
+  position: relative;
+}
+
+.call-to-action .overlay-bg {
+  position: absolute;
+  right: 0;
+  top: 0;
 }
 
 .list-social li > a {
@@ -9855,6 +9863,7 @@ img {
 
 .homepage-section-one {
   position: relative;
+  padding-top: 40px;
   padding-bottom: 140px;
   overflow: hidden;
 }
@@ -9922,6 +9931,9 @@ img {
   }
   .call-to-action {
     padding: 10em 0;
+  }
+  .homepage-section-one {
+    padding-top: 140px;
   }
 }
 
@@ -9991,6 +10003,78 @@ img {
   }
   .page-banner h1 {
     font-size: 50px;
+  }
+}
+
+.banner .bg-shape-inner {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+}
+
+.banner .bg-shape-inner .circle-shape {
+  left: 0;
+}
+
+.banner .bg-shape-inner .shape {
+  right: 0;
+}
+
+.banner .bg-shape-inner .circle-shape, .banner .bg-shape-inner .shape {
+  position: absolute;
+  z-index: 0;
+  top: 0;
+}
+
+.featured-resources {
+  position: relative;
+  background: #f9fafc;
+}
+
+.featured-resources .media {
+  position: relative;
+  background: #fff;
+  z-index: 2;
+}
+
+.featured-resources .scroll-circle {
+  position: absolute;
+  z-index: 1;
+  left: -120px;
+  bottom: -67%;
+}
+
+.shape-bg {
+  position: absolute;
+  z-index: -1;
+}
+
+.genera-informes-three {
+  position: relative;
+}
+
+.genera-informes-three .shape-bg {
+  opacity: 0;
+  left: auto;
+  right: 0;
+  top: 40px;
+  width: 500px;
+  -webkit-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+}
+
+@media (min-width: 992px) {
+  .genera-informes-three .shape-bg {
+    opacity: 1;
+  }
+}
+
+@media (min-width: 1200px) {
+  .genera-informes-three .shape-bg {
+    width: auto;
   }
 }
 
