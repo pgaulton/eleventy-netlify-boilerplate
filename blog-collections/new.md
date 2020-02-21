@@ -6,5 +6,6 @@ eleventyNavigation:
   key: What's new
   order: 1
   parent: Blog
+  comingSoon: true
 tag: 'new'
 ---

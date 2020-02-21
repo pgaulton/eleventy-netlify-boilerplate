@@ -6,5 +6,6 @@ eleventyNavigation:
   key: In the press
   order: 2
   parent: Blog
+  comingSoon: true
 tag: 'press'
 ---

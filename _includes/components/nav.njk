@@ -10,7 +10,11 @@
     <button class="btn btn-link nav-link dropdown-toggle" id="navbarDropdown-{{ entry.key }}" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">{{ entry.title }}</button>
     <div class="dropdown-menu" aria-labelledby="navbarDropdown-{{ entry.key }}">
     {%- for child in entry.children %}
+    {% if child.comingSoon %}
+      <a class="dropdown-item disabled" href="{{ child.url | url }}">{{ child.title }} <small><em>(coming soon)</em></small></a>
+    {% else %}
       <a class="dropdown-item" href="{{ child.url | url }}">{{ child.title }}</a>
+    {% endif %}
     {%- endfor %}
     </div>
   </li>

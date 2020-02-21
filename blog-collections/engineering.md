@@ -6,5 +6,6 @@ eleventyNavigation:
   key: Engineering
   order: 0
   parent: Blog
+  comingSoon: false
 tag: 'engineering'
 ---
