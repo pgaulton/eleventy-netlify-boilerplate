@@ -1,8 +1,6 @@
 (function($) {
 
       var swiperSlider = function() {
-        console.log('swiper loaded')
-
           $('.swiper-container').each(function() {
 
               var interleaveOffset = 0.5;
